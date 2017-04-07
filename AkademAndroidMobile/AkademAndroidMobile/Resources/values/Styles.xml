@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <!-- Inherit from the light Material Theme -->
+  <style name="MyCustomTheme" parent="Theme.AppCompat.Light">
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
+    
+    <!-- Override the app bar color -->
+    <item name="colorPrimary">@color/green</item>
+    <item name="android:statusBarColor">@color/green_dark</item>
+    <item name="android:textColorPrimary">@color/text_87</item>
+    
+    <!-- Override the color of UI controls -->
+    <item name="colorAccent">@color/green</item>
+    
+  </style>
+
+  <style name="MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+    <item name="color">#fff</item>
+    <item name="spinBars">true</item>
+  </style>
+
+  <style name="Theme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <style name="edittext_prompttext">
+    <item name="android:textColor">@color/prompt_text_color</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="edittext">
+    <item name="android:textColor">@drawable/edittext_text_color</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingBottom">12dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:background">@drawable/edittext</item>
+  </style>
+
+  <style name="yellow_button">
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/yellow_button_color</item>
+    <item name="android:background">@drawable/yellow_button</item>
+  </style>
+
+  <style name="reestablish_button">
+    <item name="android:textColor">@color/green</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+</resources>

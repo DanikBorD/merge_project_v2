@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <color name="main_bg_color">#ffffff</color>
+  <color name="prompt_text_color">#bbbbbb</color>
+  <color name="edittext_bg_color">#fff</color>
+  <color name="edittext_text_color">#000000</color>
+  <color name="edittext_disabled_text_color">#a7a7a7</color>
+  <color name="yellow_button_color">#ffffff</color>
+  
+  <!-- Общие цвета интерфейсов -->
+  <color name="green_light">#78d525</color>
+  <color name="green">#00923f</color>
+  <color name="green_dark">#096832</color>
+  <color name="yellow">#ffcc00</color>
+  <color name="yellow_dark">#ae8b00</color>
+  <color name="red_light">#f04c4c</color>
+  <color name="red_blood">#df1818</color>
+  <color name="purple">#9719d2</color>
+  <color name="blue">#328adc</color>
+  
+  <!-- Текст -->
+  <color name="text_87">#212121</color>
+  <color name="text_60">#666666</color>
+</resources>

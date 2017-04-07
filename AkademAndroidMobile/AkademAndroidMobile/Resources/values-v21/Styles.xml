@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <!-- Inherit from the light Material Theme -->
+  <style name="MyCustomTheme" parent="Theme.AppCompat.Light">
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
+    
+    <!-- Override the app bar color -->
+    <item name="colorPrimary">@color/green</item>
+    <item name="android:statusBarColor">@color/green_dark</item>
+    <item name="android:textColorPrimary">@color/text_87</item>
+    
+    <!-- Override the color of UI controls -->
+    <item name="colorAccent">@color/green</item>
+    
+  </style>
+
+  <style name="MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+    <item name="color">#fff</item>
+    <item name="spinBars">true</item>
+  </style>
+</resources>

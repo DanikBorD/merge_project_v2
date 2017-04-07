@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:gravity="center">
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="45dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginBottom="50dp"
+                android:scaleType="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/edittext_prompttext"
+                    android:text="Логин" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    style="@style/edittext"
+                    android:id="@+id/email"
+                    android:singleLine="true"
+                    android:gravity="center" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/edittext_prompttext"
+                    android:text="Пароль" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    style="@style/edittext"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <Button
+                    style="@style/yellow_button"
+                    android:textColor="#fff"
+                    android:text="Вход"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signInBtn" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:layout_gravity="center"
+            android:text="@string/forgot_password"
+            android:background="@android:color/transparent"
+            style="@style/reestablish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reestablishPassBtn" />
+    </FrameLayout>
+</FrameLayout>
