@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content;
 using Android.Widget;
 using Android.OS;
+using Android.Support.Design.Widget;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
@@ -15,7 +16,7 @@ namespace AkademAndroidMobile
     [Activity(Theme = "@style/MyCustomTheme", Label = "AkademAndroidMobile", Icon = "@drawable/icon")]
     public class MainActivity : ActionBarActivity
     {
-        private ListView _mLeftDrawer;
+        private NavigationView _mLeftDrawer;
         private DrawerLayout _mDrawerLayout;
         private MyActionBarDrawerToggle _mDrawerToggle;
         private SupportToolbar _mToolbar;
@@ -31,25 +32,25 @@ namespace AkademAndroidMobile
             SupportActionBar.SetHomeButtonEnabled(true);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
 
-            if (bundle != null)
-            {
-                if (bundle.GetString("DrawerState") == "Opened")
-                {
-                    SupportActionBar.SetTitle(Resource.String.openDrawer);
-                }
-                else
-                {
-                    SupportActionBar.SetTitle(Resource.String.closeDrawer);
-                }
-            }
-            else
-            {
-                SupportActionBar.SetTitle(Resource.String.closeDrawer);
-            }
+            //if (bundle != null)
+            //{
+            //    if (bundle.GetString("DrawerState") == "Opened")
+            //    {
+            //        SupportActionBar.SetTitle(Resource.String.openDrawer);
+            //    }
+            //    else
+            //    {
+            //        SupportActionBar.SetTitle(Resource.String.closeDrawer);
+            //    }
+            //}
+            //else
+            //{
+            //    SupportActionBar.SetTitle(Resource.String.closeDrawer);
+            //}
 
             //Выпадающее меню слева
             _mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            _mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
+            _mLeftDrawer = FindViewById<NavigationView>(Resource.Id.left_drawer);
             _mDrawerToggle = new MyActionBarDrawerToggle(
                 this,
                 _mDrawerLayout,
@@ -63,7 +64,7 @@ namespace AkademAndroidMobile
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.Top_menus, menu);
-            return base.OnCreateOptionsMenu(menu);
+            return true;
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

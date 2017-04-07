@@ -31,13 +31,13 @@ namespace AkademAndroidMobile
         public override void OnDrawerOpened(View drawerView)
         {
             base.OnDrawerOpened(drawerView);
-            _mHostActivity.SupportActionBar.SetTitle(_mOpenResource);
+            //_mHostActivity.SupportActionBar.SetTitle(_mOpenResource);
         }
 
         public override void OnDrawerClosed(View drawerView)
         {
             base.OnDrawerClosed(drawerView);
-            _mHostActivity.SupportActionBar.SetTitle(_mClosedResource);
+            //_mHostActivity.SupportActionBar.SetTitle(_mClosedResource);
         }
 
         public override void OnDrawerSlide(View drawerView, float slideOffset)

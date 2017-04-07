@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout"
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <!-- The main Content-->
-        <LinearLayout android:id="@+id/content_frame"
+    <!-- The main Content-->
+        <LinearLayout
+            android:id="@+id/content_frame"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <include android:id="@+id/toolbar"
-                layout="@layout/Toolbar"/>
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/Toolbar" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Support V7 Drawer Right Side" />
         </LinearLayout>
-        <!--Left view-->
-        <ListView android:id="@+id/left_drawer"
-            android:layout_width="240dp"
+    <!--Left view
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="325dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:choiceMode="singleChoice"
             android:divider="@android:color/transparent"
             android:dividerHeight="0dp"
-            android:background="#111"/>
+            android:background="#111" />-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/left_drawer"
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/drawer_view"></android.support.design.widget.NavigationView>
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>
