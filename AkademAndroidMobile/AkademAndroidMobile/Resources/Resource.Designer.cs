@@ -2504,14 +2504,14 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f07008d
 			public const int media_actions = 2131165325;
 			
-			// aapt resource value: 0x7f0700a4
-			public const int menu_edit = 2131165348;
-			
 			// aapt resource value: 0x7f0700a6
-			public const int menu_preferences = 2131165350;
+			public const int menu_edit = 2131165350;
 			
-			// aapt resource value: 0x7f0700a5
-			public const int menu_save = 2131165349;
+			// aapt resource value: 0x7f0700a8
+			public const int menu_preferences = 2131165352;
+			
+			// aapt resource value: 0x7f0700a7
+			public const int menu_save = 2131165351;
 			
 			// aapt resource value: 0x7f070022
 			public const int middle = 2131165218;
@@ -2529,10 +2529,16 @@ namespace AkademAndroidMobile
 			public const int nav_item_2 = 2131165345;
 			
 			// aapt resource value: 0x7f0700a2
-			public const int nav_sub_1 = 2131165346;
+			public const int nav_item_3 = 2131165346;
 			
 			// aapt resource value: 0x7f0700a3
-			public const int nav_sub_2 = 2131165347;
+			public const int nav_item_4 = 2131165347;
+			
+			// aapt resource value: 0x7f0700a4
+			public const int nav_sub_1 = 2131165348;
+			
+			// aapt resource value: 0x7f0700a5
+			public const int nav_sub_2 = 2131165349;
 			
 			// aapt resource value: 0x7f070079
 			public const int navigation_header_container = 2131165305;
