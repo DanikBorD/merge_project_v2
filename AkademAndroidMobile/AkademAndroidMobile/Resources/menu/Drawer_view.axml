@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-  <group android:checkableBehavior="single">
+  <group 
+    android:id="@+id/nav_main_group"
+    android:checkableBehavior="single">
     <item
         android:id="@+id/nav_item_1"
         android:icon="@drawable/ic_action_content_create"
@@ -19,18 +21,18 @@
         android:icon="@drawable/ic_action_content_create"
         android:title="Контакты" />
   </group>
-
-  <item android:title="Sub items">
-    <menu>
-      <item
+  <group 
+    android:id="@+id/nav_sub_group"
+    android:checkableBehavior="none">
+    <item
           android:id="@+id/nav_sub_1"
           android:icon="@drawable/ic_action_content_create"
-          android:title="Настойки" />
-      <item
-          android:id="@+id/nav_sub_2"
-          android:icon="@drawable/ic_action_content_create"
-          android:title="Выход" />
-    </menu>
-  </item>
+          android:title="Настройки" />
+    <item
+        android:id="@+id/nav_sub_2"
+        android:icon="@drawable/ic_action_content_create"
+        android:title="Выход" />
+  </group>
+
 
 </menu>
