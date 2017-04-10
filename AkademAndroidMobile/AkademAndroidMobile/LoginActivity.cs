@@ -32,7 +32,7 @@ namespace AkademAndroidMobile
         {
             Intent intent = new Intent(this, typeof(MainActivity));
             this.StartActivity(intent);
-            this.OverridePendingTransition(Android.Resource.Animation.SlideInLeft, Android.Resource.Animation.SlideOutRight);
+            this.OverridePendingTransition(Android.Resource.Animation.SlideOutRight, Android.Resource.Animation.SlideInLeft);
         }
     }
 }
