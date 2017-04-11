@@ -28,4 +28,6 @@
   <color name="death_text">#ae8b00</color>
   <color name="overdue_text">#dc2222</color>
   <color name="verified_text">#54b201</color>
+  <color name="satisfy_text">#9719d2</color>
+  <color name="closed_text">#328adc</color>
 </resources>
