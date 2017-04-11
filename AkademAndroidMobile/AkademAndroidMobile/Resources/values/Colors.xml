@@ -21,4 +21,11 @@
   <!-- Текст -->
   <color name="text_87">#212121</color>
   <color name="text_60">#666666</color>
+  
+  <!-- Текст в карточках-->
+  <color name="black">#000</color>
+  <color name="gray">#8d8d8d</color>
+  <color name="death_text">#ae8b00</color>
+  <color name="overdue_text">#dc2222</color>
+  <color name="verified_text">#54b201</color>
 </resources>

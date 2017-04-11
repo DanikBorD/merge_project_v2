@@ -31,8 +31,8 @@ namespace AkademAndroidMobile
         private void _mButton_Click(object sender, EventArgs e)
         {
             Intent intent = new Intent(this, typeof(MainActivity));
-            this.StartActivity(intent);
-            this.OverridePendingTransition(Android.Resource.Animation.SlideOutRight, Android.Resource.Animation.SlideInLeft);
+            StartActivity(intent);
+            OverridePendingTransition(Android.Resource.Animation.SlideOutRight, Android.Resource.Animation.SlideInLeft);
         }
     }
 }
