@@ -18,7 +18,7 @@ namespace AkademAndroidMobile
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            StartActivity(typeof(MainActivity));
+            StartActivity(typeof(LoginActivity));
         }
     }
 }

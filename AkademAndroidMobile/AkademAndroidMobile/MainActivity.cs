@@ -28,7 +28,7 @@ namespace AkademAndroidMobile
 
             SupportActionBar ab = SupportActionBar;
             ab.Title = "Заявки";
-            ab.SetHomeAsUpIndicator(Resource.Drawable.ic_action_content_create);
+            ab.SetHomeAsUpIndicator(Resource.Drawable.burger_icon);
             ab.SetDisplayHomeAsUpEnabled(true);
 
             //Выпадающее меню слева
