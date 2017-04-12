@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
   <item
-       android:id="@+id/menu_edit"
-       android:icon="@drawable/ic_action_content_create"
+       android:id="@+id/menu_place"
+       android:icon="@drawable/ic_place_white_24dp"
        app:showAsAction="ifRoom"
-       android:title="Edit" />
+       android:title="Place" />
   <item
        android:id="@+id/menu_save"
        android:icon="@drawable/ic_action_content_save"
