@@ -59,6 +59,7 @@ namespace AkademAndroidMobile
 
         }
 
+        //Скрывает навигацию по клику, на любой item навигации (вроде)
         private void SetUpDrawerContent(NavigationView mLeftDrawer)
         {
             mLeftDrawer.NavigationItemSelected += (object sender, NavigationView.NavigationItemSelectedEventArgs e) =>
@@ -68,6 +69,7 @@ namespace AkademAndroidMobile
             };
         }
 
+        //Создание меню в тулбаре
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.Top_menus, menu);
@@ -79,6 +81,7 @@ namespace AkademAndroidMobile
             switch (item.ItemId)
             {
                 case Android.Resource.Id.Home:
+                    //Обрабатывает клик по бургеру, и выводит навигацию
                     _mDrawerLayout.OpenDrawer((int)GravityFlags.Left);
                     return true;
 

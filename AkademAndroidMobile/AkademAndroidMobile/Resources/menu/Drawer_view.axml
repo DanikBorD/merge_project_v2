@@ -5,19 +5,19 @@
     android:id="@+id/nav_main_group"
     android:checkableBehavior="single">
     <item
-        android:id="@+id/nav_item_1"
+        android:id="@+id/nav_create_req"
         android:icon="@drawable/ic_add_req_24dp"
         android:title="Создать заявку" />
     <item
-        android:id="@+id/nav_item_2"
+        android:id="@+id/nav_list_req"
         android:icon="@drawable/ic_list_req_24dp"
         android:title="Заявки" />
     <item
-        android:id="@+id/nav_item_3"
+        android:id="@+id/nav_map"
         android:icon="@drawable/ic_map_24dp"
         android:title="Карта" />
     <item
-        android:id="@+id/nav_item_4"
+        android:id="@+id/nav_contacts"
         android:icon="@drawable/ic_contacts_24dp"
         android:title="Контакты" />
   </group>
@@ -25,11 +25,11 @@
     android:id="@+id/nav_sub_group"
     android:checkableBehavior="none">
     <item
-          android:id="@+id/nav_sub_1"
+          android:id="@+id/nav_settings"
           android:icon="@drawable/ic_settings_24dp"
           android:title="Настройки" />
     <item
-        android:id="@+id/nav_sub_2"
+        android:id="@+id/nav_exit"
         android:icon="@drawable/ic_exit_24dp"
         android:title="Выход" />
   </group>
