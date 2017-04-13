@@ -5,16 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:id="@+id/linearLayout1">
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <!-- The main Content-->
+    <!-- The main Content-->
         <include
             android:id="@+id/request_content"
             layout="@layout/Request_content" />
-        <!-- Navigation menu-->
+    <!-- Navigation menu-->
         <android.support.design.widget.NavigationView
             android:id="@+id/left_drawer"
             android:layout_width="325dp"
@@ -23,6 +24,6 @@
             android:choiceMode="singleChoice"
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/nav_header"
-            app:menu="@menu/drawer_view"/>
+            app:menu="@menu/drawer_view" />
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>
