@@ -17,10 +17,6 @@ namespace AkademAndroidMobile
     [Activity(Theme = "@style/MyCustomTheme", Label = "AkademAndroidMobile", Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
-        private TextView time_display_box;
-        private int count = 1;
-        Timer timer;
-
         private DrawerLayout _mDrawerLayout;
         protected override void OnCreate(Bundle bundle)
         {
@@ -61,40 +57,9 @@ namespace AkademAndroidMobile
                         .Show();
             };
 
-            //Таймер
-           /* time_display_box = FindViewById<TextView>(Resource.Id.time_display_box);*/
-
         }
 
-        //Таймер >>
-        /*protected override void OnResume()
-        {
-            base.OnResume();
-            timer = new Timer();
-            timer.Interval = 1000; //1s
-            timer.Elapsed += Timer_Elapsed;
-            timer.Start();
-        }
-
-        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            if (count < 10)
-            {
-                count++;
-                RunOnUiThread(() => {
-                   time_display_box.Text = "" + count;
-                });
-            }
-            else
-            {
-                count = 1;
-                Toast.MakeText(this, "Hi", ToastLength.Short).Show();
-                time_display_box.Text = "" + count;
-            }
-        }*/
-       //Таймер <<
-
-    private void SetUpDrawerContent(NavigationView mLeftDrawer)
+        private void SetUpDrawerContent(NavigationView mLeftDrawer)
         {
             mLeftDrawer.NavigationItemSelected += (object sender, NavigationView.NavigationItemSelectedEventArgs e) =>
             {
