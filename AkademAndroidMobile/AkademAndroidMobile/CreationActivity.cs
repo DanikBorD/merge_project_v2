@@ -14,6 +14,8 @@ using Android.Views;
 using Android.Widget;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 using SupportActionBar = Android.Support.V7.App.ActionBar;
+using AkademAndroidMobile.Resources.fragments;
+using System.Globalization;
 
 namespace AkademAndroidMobile
 {
@@ -21,6 +23,12 @@ namespace AkademAndroidMobile
     public class CreationActivity : AppCompatActivity
     {
         private DrawerLayout _mDrawerLayout;
+        Button _dateSelectButton, _timeSelectButton;
+
+        private int hour;
+        private int minute;
+
+        const int TIME_DIALOG_ID = 0;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -44,6 +52,20 @@ namespace AkademAndroidMobile
                 SetUpDrawerContent(mLeftDrawer);
             }
 
+            //Выбор даты
+            _dateSelectButton = FindViewById<Button>(Resource.Id.InputDate);
+            _dateSelectButton.Click += DateSelect_OnClick;
+
+            //Выбор времени
+            _timeSelectButton = FindViewById<Button>(Resource.Id.InputTime);
+            _timeSelectButton.Click += (o, e) => ShowDialog(TIME_DIALOG_ID);
+
+            // Get the current time
+            hour = DateTime.Now.Hour;
+            minute = DateTime.Now.Minute;
+
+            // Display the current date
+            UpdateDisplay();
         }
 
         //Скрывает навигацию по клику, на любой item навигации (вроде)
@@ -69,6 +91,36 @@ namespace AkademAndroidMobile
                     Toast.MakeText(this, "Action selected: " + item.TitleFormatted, ToastLength.Short).Show();
                     return base.OnOptionsItemSelected(item);
             }
+        }
+
+        void DateSelect_OnClick(object sender, EventArgs eventArgs)
+        {
+            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            {
+                _dateSelectButton.Text = time.ToString("d", CultureInfo.CreateSpecificCulture("ru-RU"));
+            });
+            frag.Show(FragmentManager, DatePickerFragment.TAG);
+        }
+
+        private void UpdateDisplay()
+        {
+            string time = string.Format("{0}:{1}", hour, minute.ToString().PadLeft(2, '0'));
+            _timeSelectButton.Text = time;
+        }
+
+        private void TimePickerCallback(object sender, TimePickerDialog.TimeSetEventArgs e)
+        {
+            hour = e.HourOfDay;
+            minute = e.Minute;
+            UpdateDisplay();
+        }
+
+        protected override Dialog OnCreateDialog(int id)
+        {
+            if (id == TIME_DIALOG_ID)
+                return new TimePickerDialog(this, TimePickerCallback, hour, minute, true);
+
+            return null;
         }
     }
 }

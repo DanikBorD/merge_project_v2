@@ -9,13 +9,96 @@
       android:orientation="vertical"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/Toolbar" />
-    <ScrollView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent">
-    </ScrollView>
+      <include
+          android:id="@+id/toolbar"
+          layout="@layout/Toolbar" />
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:padding="12dp"
+          android:layout_height="match_parent">
+          <android.support.design.widget.TextInputLayout
+              android:id="@+id/txtInputLayoutHouse"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <EditText
+                  android:id="@+id/txtInputHouse"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:inputType="text"
+                  android:hint="Дом" />
+          </android.support.design.widget.TextInputLayout>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <android.support.design.widget.TextInputLayout
+                  android:id="@+id/txtInputLayoutRoom"
+                  android:layout_weight="2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <EditText
+                      android:id="@+id/txtInputRoom"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:inputType="text"
+                      android:hint="Квартира" />
+              </android.support.design.widget.TextInputLayout>
+              <!--<android.support.design.widget.TextInputLayout
+                  android:id="@+id/txtInputLayoutDate"
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <EditText
+                      android:id="@+id/txtInputDate"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:inputType="text"
+                      android:hint="Дата" />
+              </android.support.design.widget.TextInputLayout> 
+              
+              <android.support.design.widget.TextInputLayout
+                  android:id="@+id/txtInputLayoutTime"
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <EditText
+                      android:id="@+id/txtInputTime"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:inputType="text"
+                      android:hint="Время" />
+                </android.support.design.widget.TextInputLayout>-->
+              <LinearLayout
+                  android:id="@+id/InputLayoutDate"
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <Button
+                      android:id="@+id/InputDate"
+                      android:text="Дата"
+                      android:layout_gravity="center"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+              </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/InputLayoutTime"
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <Button
+                      android:id="@+id/InputTime"
+                      android:text="Время"
+                      android:layout_gravity="center"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+              </LinearLayout>
+          </LinearLayout>
+      </LinearLayout>
   </LinearLayout>
   <android.support.design.widget.FloatingActionButton
       android:id="@+id/fab"
@@ -25,4 +108,3 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
 </android.support.design.widget.CoordinatorLayout>
-
