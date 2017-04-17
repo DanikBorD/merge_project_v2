@@ -14,37 +14,153 @@
       <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+      <!--Карточка обычная-->
       <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:padding="8dp"
         android:background="#ededed"
         android:layout_height="match_parent">
+        <!--блок 1-->
         <LinearLayout
+          android:orientation="vertical"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:background="@drawable/RadiusRequestCard"
           android:elevation="4dp"
           android:layout_marginBottom="8dp">
-          <LinearLayout
+          <!--<LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:background="#fff"
-            android:layout_height="8dp"/>
+            android:layout_height="8dp"/>-->
           <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginBottom="15dp">
+              <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:textSize="14sp"
+                 android:textColor="#00923f"
+                 android:text="28.03, 13:30"
+                 android:layout_height="wrap_content"/>
+              <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_gravity="right"
+                 android:gravity="right"
+                 android:textColor="@color/gray"
+                 android:textSize="14sp"
+                 android:text="073403 от 17.02"
+                 android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+              <TextView
+                 android:layout_width="match_parent"
+                 android:textSize="20sp"
+                 android:textColor="#000"
+                 android:paddingBottom="5dp"
+                 android:text="Блок 2.7"
+                 android:layout_height="wrap_content"/>
+              <TextView
+                 android:layout_width="match_parent"
+                 android:textSize="20sp"
+                 android:textColor="#000"
+                 android:text="Анатолия Мехренцева 42а"
+                 android:paddingBottom="5dp"
+                 android:layout_height="wrap_content"/>
+              <TextView
+                 android:layout_width="match_parent"
+                 android:textSize="14sp"
+                 android:textColor="@color/gray"
+                 android:text="Паркинг, 1п. 13/18э. 1с."
+                 android:layout_height="wrap_content"/>
+            </LinearLayout>
+          </LinearLayout>
+        </LinearLayout>
+        <!--Блок 2-->
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/RadiusRequestCard"
+          android:elevation="4dp"
+          android:layout_marginBottom="8dp">
+          
+          <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:padding="15dp"
             android:background="#fff"
             android:layout_height="wrap_content">
             <TextView
-              android:layout_width="match_parent"
+              android:layout_width="wrap_content"
               android:text="sdad"
               android:layout_height="wrap_content">
-              
+
+            </TextView>
+          </LinearLayout>
+        </LinearLayout>
+        <!--Блок 3-->
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/RadiusRequestCard"
+          android:elevation="4dp"
+          android:layout_marginBottom="8dp">
+
+          <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+            <TextView
+              android:layout_width="wrap_content"
+              android:text="sdad"
+              android:layout_height="wrap_content">
+
+            </TextView>
+          </LinearLayout>
+        </LinearLayout>
+        <!--Блок 4-->
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/RadiusRequestCard"
+          android:elevation="4dp"
+          android:layout_marginBottom="8dp">
+
+          <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+            <TextView
+              android:layout_width="wrap_content"
+              android:text="sdad"
+              android:layout_height="wrap_content">
+
             </TextView>
           </LinearLayout>
         </LinearLayout>
       </LinearLayout>
+      <!--карта-->
+        
     </ScrollView>
   </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
