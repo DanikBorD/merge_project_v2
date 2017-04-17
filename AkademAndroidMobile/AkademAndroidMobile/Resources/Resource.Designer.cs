@@ -2206,6 +2206,9 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0200af
 			public const int avd_hide_password_3 = 2130837679;
 			
+			// aapt resource value: 0x7f0200ae
+			public const int avd_hide_password_3 = 2130837678;
+			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
@@ -2217,6 +2220,9 @@ namespace AkademAndroidMobile
 			
 			// aapt resource value: 0x7f0200b2
 			public const int avd_show_password_3 = 2130837682;
+			
+			// aapt resource value: 0x7f0200b1
+			public const int avd_show_password_3 = 2130837681;
 			
 			// aapt resource value: 0x7f020055
 			public const int BorderReverseTimer = 2130837589;
