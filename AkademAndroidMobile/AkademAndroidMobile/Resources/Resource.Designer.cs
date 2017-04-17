@@ -2197,26 +2197,26 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f0200ac
-			public const int avd_hide_password_1 = 2130837676;
-			
 			// aapt resource value: 0x7f0200ad
-			public const int avd_hide_password_2 = 2130837677;
+			public const int avd_hide_password_1 = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int avd_hide_password_3 = 2130837678;
+			public const int avd_hide_password_2 = 2130837678;
+			
+			// aapt resource value: 0x7f0200af
+			public const int avd_hide_password_3 = 2130837679;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f0200af
-			public const int avd_show_password_1 = 2130837679;
-			
 			// aapt resource value: 0x7f0200b0
-			public const int avd_show_password_2 = 2130837680;
+			public const int avd_show_password_1 = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int avd_show_password_3 = 2130837681;
+			public const int avd_show_password_2 = 2130837681;
+			
+			// aapt resource value: 0x7f0200b2
+			public const int avd_show_password_3 = 2130837682;
 			
 			// aapt resource value: 0x7f020055
 			public const int BorderReverseTimer = 2130837589;
@@ -2428,11 +2428,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f02009a
 			public const int notification_icon_background = 2130837658;
 			
-			// aapt resource value: 0x7f0200aa
-			public const int notification_template_icon_bg = 2130837674;
-			
 			// aapt resource value: 0x7f0200ab
-			public const int notification_template_icon_low_bg = 2130837675;
+			public const int notification_template_icon_bg = 2130837675;
+			
+			// aapt resource value: 0x7f0200ac
+			public const int notification_template_icon_low_bg = 2130837676;
 			
 			// aapt resource value: 0x7f02009b
 			public const int notification_tile_bg = 2130837659;
@@ -2453,31 +2453,34 @@ namespace AkademAndroidMobile
 			public const int RadiusOverdue = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int RadiusSatisfy = 2130837665;
+			public const int RadiusRequestCard = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int RadiusVerified = 2130837666;
+			public const int RadiusSatisfy = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int satisfy_icon = 2130837667;
+			public const int RadiusVerified = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int splash = 2130837668;
+			public const int satisfy_icon = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int splash_screen = 2130837669;
+			public const int splash = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int verified_icon = 2130837670;
+			public const int splash_screen = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int yellow_button = 2130837671;
+			public const int verified_icon = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int yellow_button_normal = 2130837672;
+			public const int yellow_button = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int yellow_button_pressed = 2130837673;
+			public const int yellow_button_normal = 2130837673;
+			
+			// aapt resource value: 0x7f0200aa
+			public const int yellow_button_pressed = 2130837674;
 			
 			static Drawable()
 			{
@@ -3278,19 +3281,22 @@ namespace AkademAndroidMobile
 			public const int Request_content = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int select_dialog_item_material = 2130903102;
+			public const int RequestCard_content = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int select_dialog_multichoice_material = 2130903103;
+			public const int select_dialog_item_material = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int select_dialog_singlechoice_material = 2130903104;
+			public const int select_dialog_multichoice_material = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int support_simple_spinner_dropdown_item = 2130903105;
+			public const int select_dialog_singlechoice_material = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int toolbar = 2130903106;
+			public const int support_simple_spinner_dropdown_item = 2130903106;
+			
+			// aapt resource value: 0x7f030043
+			public const int toolbar = 2130903107;
 			
 			static Layout()
 			{

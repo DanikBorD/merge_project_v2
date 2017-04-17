@@ -131,6 +131,7 @@
     <Compile Include="CreationActivity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="RequestCardActivity.cs" />
     <Compile Include="Resources\fragments\DatePickerFragment.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -163,6 +164,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Creation_content.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RequestCard_content.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -784,7 +788,12 @@
     <Folder Include="Resources\layout\Contents\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\BorderReverseTimer.xml" />
+    <AndroidResource Include="Resources\drawable\BorderReverseTimer.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\RadiusRequestCard.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
