@@ -6,5 +6,5 @@
     <string name="closeDrawer">Drawer Close</string>
     <string name="forgot_password">Забыли пароль?</string>
     <!--Таймер-->
-    <string name="_00_30">25:30</string>
+    <string name="_00_00">25:30</string>
 </resources>

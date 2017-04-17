@@ -63,4 +63,16 @@
     <item name="android:textColor">@color/green</item>
     <item name="android:textStyle">bold</item>
   </style>
+  
+  <!--Таймер у аварийной задачи-->
+  <style name="ReverseTimerStyle">
+    <item name="android:textColor">#df1818</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:background">@drawable/BorderReverseTimer</item>
+    <item name="android:padding">4dp</item>
+    <item name="android:elevation">4dp</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingRight">8dp</item>
+  </style>
 </resources>
