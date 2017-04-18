@@ -29,7 +29,6 @@ namespace AkademAndroidMobile
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
             SetContentView(Resource.Layout.RequestCard_content);
 
             SupportToolbar mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
@@ -40,8 +39,9 @@ namespace AkademAndroidMobile
             ab.SetHomeAsUpIndicator(Resource.Drawable.ic_add_white_24dp);
             ab.SetDisplayHomeAsUpEnabled(true);
 
-            //Селекты
-            InitItems();
+            //Cпиннер
+
+            listItems.Add("Мастер-Дом, Парамонов О.С.");
             _spinner = FindViewById<MaterialSpinner>(Resource.Id.contractor_spinner);
             adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, listItems);
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
@@ -50,7 +50,7 @@ namespace AkademAndroidMobile
 
         }
 
-        //Селекты >>
+        //Функия спиннера
         private void _spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             if (e.Position != -1)
@@ -60,11 +60,6 @@ namespace AkademAndroidMobile
                     _spinner.Error = "This is Error";
             }
         }
-
-        private void InitItems()
-        {
-            listItems.Add("Мастер-Дом, Парамонов О.С.");
-        }
-        //Селекты <<
+        
     }
 }

@@ -111,7 +111,7 @@ namespace AkademAndroidMobile
 
         }
 
-        //Функия выбор первого спиннера
+        //Функия спиннера
         private void _spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             if (e.Position != -1)
