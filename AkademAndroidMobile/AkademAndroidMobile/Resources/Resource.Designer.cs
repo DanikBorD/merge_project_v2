@@ -105,6 +105,22 @@ namespace AkademAndroidMobile
 			}
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0d0000
+			public const int contractor_array = 2131558400;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -2711,6 +2727,9 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f07004e
 			public const int contentPanel = 2131165262;
 			
+			// aapt resource value: 0x7f0700ae
+			public const int contractor_spinner = 2131165358;
+			
 			// aapt resource value: 0x7f070075
 			public const int creation_content = 2131165301;
 			
@@ -2846,14 +2865,14 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f070077
 			public const int main_content = 2131165303;
 			
-			// aapt resource value: 0x7f0700af
-			public const int masked = 2131165359;
+			// aapt resource value: 0x7f0700b0
+			public const int masked = 2131165360;
 			
 			// aapt resource value: 0x7f07009d
 			public const int media_actions = 2131165341;
 			
-			// aapt resource value: 0x7f0700b8
-			public const int menu_assept = 2131165368;
+			// aapt resource value: 0x7f0700b9
+			public const int menu_assept = 2131165369;
 			
 			// aapt resource value: 0x7f070022
 			public const int middle = 2131165218;
@@ -2864,29 +2883,29 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f07001a
 			public const int multiply = 2131165210;
 			
-			// aapt resource value: 0x7f0700b4
-			public const int nav_contacts = 2131165364;
-			
-			// aapt resource value: 0x7f0700b1
-			public const int nav_create_req = 2131165361;
-			
-			// aapt resource value: 0x7f0700b7
-			public const int nav_exit = 2131165367;
+			// aapt resource value: 0x7f0700b5
+			public const int nav_contacts = 2131165365;
 			
 			// aapt resource value: 0x7f0700b2
-			public const int nav_list_req = 2131165362;
+			public const int nav_create_req = 2131165362;
 			
-			// aapt resource value: 0x7f0700b0
-			public const int nav_main_group = 2131165360;
+			// aapt resource value: 0x7f0700b8
+			public const int nav_exit = 2131165368;
 			
 			// aapt resource value: 0x7f0700b3
-			public const int nav_map = 2131165363;
+			public const int nav_list_req = 2131165363;
+			
+			// aapt resource value: 0x7f0700b1
+			public const int nav_main_group = 2131165361;
+			
+			// aapt resource value: 0x7f0700b4
+			public const int nav_map = 2131165364;
+			
+			// aapt resource value: 0x7f0700b7
+			public const int nav_settings = 2131165367;
 			
 			// aapt resource value: 0x7f0700b6
-			public const int nav_settings = 2131165366;
-			
-			// aapt resource value: 0x7f0700b5
-			public const int nav_sub_group = 2131165365;
+			public const int nav_sub_group = 2131165366;
 			
 			// aapt resource value: 0x7f07008b
 			public const int navigation_header_container = 2131165323;
@@ -3131,8 +3150,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f07000e
 			public const int view_offset_helper = 2131165198;
 			
-			// aapt resource value: 0x7f0700ae
-			public const int visible = 2131165358;
+			// aapt resource value: 0x7f0700af
+			public const int visible = 2131165359;
 			
 			// aapt resource value: 0x7f070027
 			public const int withText = 2131165223;
@@ -3410,11 +3429,11 @@ namespace AkademAndroidMobile
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f0d0000
-			public const int Drawer_view = 2131558400;
+			// aapt resource value: 0x7f0e0000
+			public const int Drawer_view = 2131623936;
 			
-			// aapt resource value: 0x7f0d0001
-			public const int Top_menus = 2131558401;
+			// aapt resource value: 0x7f0e0001
+			public const int Top_menus = 2131623937;
 			
 			static Menu()
 			{

@@ -27,8 +27,8 @@ namespace AkademAndroidMobile
         Button _dateSelectButton, _timeSelectButton;
 
         MaterialSpinner _spinner;
-        List<int> listItems = new List<int>();
-        ArrayAdapter<int> adapter;
+        List<string> listItems = new List<string>();
+        ArrayAdapter<string> adapter;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -64,7 +64,7 @@ namespace AkademAndroidMobile
 
             InitItems();
             _spinner = FindViewById<MaterialSpinner>(Resource.Id.defect_spinner);
-            adapter = new ArrayAdapter<int>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, listItems);
+            adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, listItems);
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             _spinner.Adapter = adapter;
             _spinner.ItemSelected += _spinner_ItemSelected;
@@ -83,8 +83,9 @@ namespace AkademAndroidMobile
 
         private void InitItems()
         {
-            for (int i = 1; i <= 100; i++)
-                listItems.Add(i);
+            for (int i = 1; i <= 5; i++)
+                listItems.Add(i+"");
+            listItems.Add("вафелька");
         }
 
         //Скрывает навигацию по клику, на любой item навигации (вроде)
