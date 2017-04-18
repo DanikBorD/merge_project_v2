@@ -38,7 +38,6 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:padding="15dp"
-            android:background="#fff"
             android:layout_height="wrap_content">
             <LinearLayout
                android:layout_width="match_parent"
@@ -97,19 +96,46 @@
           android:background="@drawable/RadiusRequestCard"
           android:elevation="4dp"
           android:layout_marginBottom="8dp">
-          
           <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:padding="15dp"
-            android:background="#fff"
             android:layout_height="wrap_content">
             <TextView
-              android:layout_width="wrap_content"
-              android:text="sdad"
-              android:layout_height="wrap_content">
+              android:layout_width="match_parent"
+              android:textSize="12sp"
+              android:paddingBottom="5dp"
+              android:text="Подрядчик"
+              android:textColor="@color/gray"
+              android:layout_height="wrap_content"/>
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Spinner
+                  android:id="@+id/contractor_spinner"
+                  android:entries="@array/contractor_array"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+              </LinearLayout>
+              <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@drawable/Icon"
+                    android:layout_height="15dp"
+                    android:layout_width="17dp"/>
+              </LinearLayout>
 
-            </TextView>
+            </LinearLayout>
           </LinearLayout>
         </LinearLayout>
         <!--Блок 3-->
