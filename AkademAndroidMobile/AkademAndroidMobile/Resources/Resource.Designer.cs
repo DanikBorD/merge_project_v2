@@ -105,22 +105,6 @@ namespace AkademAndroidMobile
 			}
 		}
 		
-		public partial class Array
-		{
-			
-			// aapt resource value: 0x7f0d0000
-			public const int contractor_array = 2131558400;
-			
-			static Array()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Array()
-			{
-			}
-		}
-		
 		public partial class Attribute
 		{
 			
@@ -3429,11 +3413,11 @@ namespace AkademAndroidMobile
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f0e0000
-			public const int Drawer_view = 2131623936;
+			// aapt resource value: 0x7f0d0000
+			public const int Drawer_view = 2131558400;
 			
-			// aapt resource value: 0x7f0e0001
-			public const int Top_menus = 2131623937;
+			// aapt resource value: 0x7f0d0001
+			public const int Top_menus = 2131558401;
 			
 			static Menu()
 			{
