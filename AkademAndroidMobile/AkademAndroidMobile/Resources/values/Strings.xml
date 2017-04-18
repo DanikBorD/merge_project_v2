@@ -7,12 +7,4 @@
     <string name="forgot_password">Забыли пароль?</string>
     <!--Таймер-->
     <string name="_00_00">25:30</string>
-  
-  <!--селект в карточке "подрядчик"-->
-  <string-array name="contractor_array">
-    <item>Мастер-Дом, Парамонов О.С.</item>
-    <item>2</item>
-    <item>3</item>
-    <item>4</item>
-  </string-array>
 </resources>
