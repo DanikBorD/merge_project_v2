@@ -26,15 +26,18 @@ namespace AkademAndroidMobile
         private DrawerLayout _mDrawerLayout;
         Button _dateSelectButton, _timeSelectButton;
 
-        MaterialSpinner _spinner;
-        List<string> listItems = new List<string>();
-        ArrayAdapter<string> adapter;
+        MaterialSpinner _spinner1, _spinner2;
+        List<string> listItems1 = new List<string>();
+        List<string> listItems2 = new List<string>();
+        ArrayAdapter<string> adapter1, adapter2;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             SetContentView(Resource.Layout.Creation);
+
+
 
             //Инициализация кастомного тулбара
             SupportToolbar mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
@@ -45,6 +48,8 @@ namespace AkademAndroidMobile
             ab.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
             ab.SetDisplayHomeAsUpEnabled(true);
 
+
+
             //Выпадающее меню слева
             _mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             NavigationView mLeftDrawer = FindViewById<NavigationView>(Resource.Id.left_drawer);
@@ -52,6 +57,7 @@ namespace AkademAndroidMobile
             {
                 SetUpDrawerContent(mLeftDrawer);
             }
+
 
             //Выбор даты
             _dateSelectButton = FindViewById<Button>(Resource.Id.InputDate);
@@ -62,38 +68,92 @@ namespace AkademAndroidMobile
             _timeSelectButton.Click += TimeSelect_OnClick;
             _timeSelectButton.Text = DateTime.Now.ToString("HH:mm"); //Начальное время (текущее)
 
-            InitItems();
-            _spinner = FindViewById<MaterialSpinner>(Resource.Id.defect_spinner);
-            adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, listItems);
-            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            _spinner.Adapter = adapter;
-            _spinner.ItemSelected += _spinner_ItemSelected;
+
+
+            //Select инициализация и выбор спинеров
+            //Инициализация обектов спиннера
+            listItems1.Add("Неисправность - 1");
+            listItems1.Add("Неисправность - 2");
+            listItems2.Add("Подрядчик - 1");
+            listItems2.Add("Подрядчик - 2");
+
+            //Первый спиннер
+            _spinner1 = FindViewById<MaterialSpinner>(Resource.Id.defect_spinner);
+            adapter1 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, listItems1);
+            adapter1.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            _spinner1.Adapter = adapter1;
+            _spinner1.ItemSelected += _spinner_ItemSelected;
+
+            //Второй спиннер
+            _spinner2 = FindViewById<MaterialSpinner>(Resource.Id.contractor_spinner);
+            adapter2 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, listItems2);
+            adapter2.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            _spinner2.Adapter = adapter2;
+            _spinner2.ItemSelected += _spinner_ItemSelected;
+
+
+            //Парящая кнопка
+            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+            fab.Click += (o, e) =>
+            {
+                View anchor = o as View;
+
+                Snackbar.Make(anchor, "Ваша заявка созданна", Snackbar.LengthLong)
+                        .SetAction("К списку звявок", v =>
+                        {
+                            Intent intent = new Intent(fab.Context, typeof(MainActivity));
+                            StartActivity(intent);
+                            Finish();
+                            OverridePendingTransition(Android.Resource.Animation.SlideOutRight, Android.Resource.Animation.SlideInLeft);
+                        })
+                        .Show();
+            };
 
         }
 
+        //Функия выбор первого спиннера
         private void _spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             if (e.Position != -1)
             {
-                int selected = int.Parse(_spinner.GetItemAtPosition(e.Position).ToString());
-                if (selected % 2 == 0)
-                    _spinner.Error = "This is Error";
+                int selected_position = e.Position;
+                //if (selected_position % 2 == 0)
+                //    _spinner1.Error = "Ошибка выбора";
+                if (selected_position % 2 == 0)
+                    Console.WriteLine("Ошибка выбора");
             }
         }
 
-        private void InitItems()
-        {
-            for (int i = 1; i <= 5; i++)
-                listItems.Add(i+"");
-            listItems.Add("вафелька");
-        }
-
-        //Скрывает навигацию по клику, на любой item навигации (вроде)
+        //Навигация по клику
         private void SetUpDrawerContent(NavigationView mLeftDrawer)
         {
             mLeftDrawer.NavigationItemSelected += (object sender, NavigationView.NavigationItemSelectedEventArgs e) =>
             {
-                e.MenuItem.SetChecked(true);
+
+                #region Переход на другую активити.
+
+                var menuItem = e.MenuItem;
+                menuItem.SetChecked(true);
+
+                Intent intent = new Intent();
+
+                switch (menuItem.ItemId)
+                {
+                    case Resource.Id.nav_list_req:
+                        intent = new Intent(this, typeof(MainActivity));
+                        StartActivity(intent);
+                        Finish();
+                        break;
+
+                    case Resource.Id.nav_exit:
+                        intent = new Intent(this, typeof(LoginActivity));
+                        StartActivity(intent);
+                        Finish();
+                        break;
+                }
+
+                #endregion
+
                 _mDrawerLayout.CloseDrawers();
             };
         }

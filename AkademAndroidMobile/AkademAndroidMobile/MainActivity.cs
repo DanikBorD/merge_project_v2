@@ -46,25 +46,39 @@ namespace AkademAndroidMobile
             {
                 View anchor = o as View;
 
-                Snackbar.Make(anchor, "Змея!!", Snackbar.LengthLong)
-                        .SetAction("Кыш-ш-ш!", v =>
-                        {
-                            //Do something here
-                            Intent intent = new Intent(fab.Context, typeof(LoginActivity));
-                            StartActivity(intent);
-                            OverridePendingTransition(Android.Resource.Animation.SlideInLeft, Android.Resource.Animation.SlideOutRight);
-                        })
-                        .Show();
+                Intent intent = new Intent(fab.Context, typeof(CreationActivity));
+                StartActivity(intent);
+                OverridePendingTransition(Android.Resource.Animation.SlideInLeft, Android.Resource.Animation.SlideOutRight);
             };
-
         }
 
-        //Скрывает навигацию по клику, на любой item навигации (вроде)
+        //Навигация по клику
         private void SetUpDrawerContent(NavigationView mLeftDrawer)
         {
             mLeftDrawer.NavigationItemSelected += (object sender, NavigationView.NavigationItemSelectedEventArgs e) =>
             {
-                e.MenuItem.SetChecked(true);
+                #region Переход на другую активити.
+
+                var menuItem = e.MenuItem;
+                menuItem.SetChecked(true);
+
+                Intent intent = new Intent();
+
+                switch (menuItem.ItemId)
+                {
+                    case Resource.Id.nav_create_req:
+                        intent = new Intent(this, typeof(CreationActivity));
+                        StartActivity(intent);
+                        break;
+
+                    case Resource.Id.nav_exit:
+                        intent = new Intent(this, typeof(LoginActivity));
+                        StartActivity(intent);
+                        Finish();
+                        break;
+                }
+
+                #endregion
                 _mDrawerLayout.CloseDrawers();
             };
         }

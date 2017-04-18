@@ -103,28 +103,42 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
               <EditText
-                android:id="@+id/txtInputMop"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:inputType="text"
-                android:hint="МОП" />
+                  android:id="@+id/txtInputMop"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:inputType="text"
+                  android:hint="МОП" />
           </android.support.design.widget.TextInputLayout>
           <fr.ganfra.materialspinner.MaterialSpinner
               android:id="@+id/defect_spinner"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              app:ms_arrowColor="#000"
-              app:ms_arrowSize="16dp"
-              app:ms_floatingLabelColor="#A9A9A9"
-              app:ms_floatingLabelText="Give me more power"
-              app:ms_hint="Pleace choose your desteny"
-              app:ms_hintColor="#ccc"/>
+              app:ms_arrowColor="#8d8d8d"
+              app:ms_arrowSize="14dp"
+              app:ms_floatingLabelColor="#8d8d8d"
+              app:ms_floatingLabelText="Неисправность"
+              app:ms_hint="Неисправность"
+              app:ms_hintColor="#8d8d8d"/>
+          <fr.ganfra.materialspinner.MaterialSpinner
+              android:id="@+id/contractor_spinner"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:ms_arrowColor="#8d8d8d"
+              app:ms_arrowSize="14dp"
+              app:ms_floatingLabelColor="#8d8d8d"
+              app:ms_floatingLabelText="Подрядчик"
+              app:ms_hint="Подрядчик"
+              app:ms_hintColor="#8d8d8d"/>
+          <CheckBox android:id="@+id/emergency_call_checkbox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Аварийная заявка"/>
       </LinearLayout>
   </LinearLayout>
   <android.support.design.widget.FloatingActionButton
       android:id="@+id/fab"
-      android:src="@drawable/ic_add_white_24dp"
+      android:src="@drawable/ic_check_white_24dp"
       android:layout_gravity="bottom|right"
       android:layout_margin="16dp"
       android:layout_width="wrap_content"
