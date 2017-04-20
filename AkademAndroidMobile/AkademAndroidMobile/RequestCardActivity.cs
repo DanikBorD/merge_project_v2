@@ -36,11 +36,10 @@ namespace AkademAndroidMobile
 
             SupportActionBar ab = SupportActionBar;
             ab.Title = "Домофон (первичная заявка)";
-            ab.SetHomeAsUpIndicator(Resource.Drawable.ic_add_white_24dp);
+            ab.SetHomeAsUpIndicator(Resource.Drawable.ic_action_arrow_back);
             ab.SetDisplayHomeAsUpEnabled(true);
 
             //Cпиннер
-
             listItems.Add("Мастер-Дом, Парамонов О.С.");
             _spinner = FindViewById<MaterialSpinner>(Resource.Id.contractor_spinner);
             adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem, listItems);
@@ -55,11 +54,20 @@ namespace AkademAndroidMobile
         {
             if (e.Position != -1)
             {
-                int selected = int.Parse(_spinner.GetItemAtPosition(e.Position).ToString());
-                if (selected % 2 == 0)
-                    _spinner.Error = "This is Error";
+                int selected_position = e.Position;
+                if (selected_position % 2 == 0)
+                    Console.WriteLine("Ошибка выбора");
             }
         }
-        
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if(item.ItemId == Android.Resource.Id.Home)
+            {
+                OnBackPressed();
+            }
+            return base.OnOptionsItemSelected(item);
+        }
+
     }
 }

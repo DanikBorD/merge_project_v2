@@ -117,8 +117,6 @@ namespace AkademAndroidMobile
             if (e.Position != -1)
             {
                 int selected_position = e.Position;
-                //if (selected_position % 2 == 0)
-                //    _spinner1.Error = "Ошибка выбора";
                 if (selected_position % 2 == 0)
                     Console.WriteLine("Ошибка выбора");
             }
@@ -133,7 +131,7 @@ namespace AkademAndroidMobile
                 #region Переход на другую активити.
 
                 var menuItem = e.MenuItem;
-                menuItem.SetChecked(true);
+                //menuItem.SetChecked(true);
 
                 Intent intent = new Intent();
 
@@ -141,6 +139,12 @@ namespace AkademAndroidMobile
                 {
                     case Resource.Id.nav_list_req:
                         intent = new Intent(this, typeof(MainActivity));
+                        StartActivity(intent);
+                        Finish();
+                        break;
+
+                    case Resource.Id.nav_contacts:
+                        intent = new Intent(this, typeof(ContactsActivity));
                         StartActivity(intent);
                         Finish();
                         break;

@@ -13,8 +13,8 @@
         android:layout_height="match_parent">
     <!-- The main Content-->
         <include
-            android:id="@+id/request_content"
-            layout="@layout/Request_content" />
+            android:id="@+id/requests_content"
+            layout="@layout/Requests_content" />
     <!-- Navigation menu-->
         <android.support.design.widget.NavigationView
             android:id="@+id/left_drawer"
