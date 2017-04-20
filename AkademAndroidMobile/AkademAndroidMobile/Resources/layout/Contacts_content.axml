@@ -17,11 +17,130 @@
         android:layout_width="match_parent"
         android:padding="12dp"
         android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заголовок"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+            <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="6">
+                <ImageView
+                  android:src="@drawable/ic_contact_icon"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  android:gravity="left"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:text="Имя фамилия - 2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="Диспетчер"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+           <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6">
+            <ImageView
+              android:src="@drawable/ic_contact_icon"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:gravity="left"/>
+          </LinearLayout>
+           <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:text="Имя фамилия"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Диспетчер"/>
+          </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мастер-Дом"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+          <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="6">
+            <ImageView
+              android:src="@drawable/ic_contact_icon"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:gravity="left"/>
+          </LinearLayout>
+          <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:text="Имя фамилия - 3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Диспетчер"/>
+          </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
   </LinearLayout>
   <android.support.design.widget.FloatingActionButton
       android:id="@+id/fab"
-      android:src="@drawable/ic_check_white_24dp"
+      android:src="@drawable/ic_search_24dp"
       android:layout_gravity="bottom|right"
       android:layout_margin="16dp"
       android:layout_width="wrap_content"
