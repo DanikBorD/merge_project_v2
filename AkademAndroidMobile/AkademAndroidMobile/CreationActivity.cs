@@ -31,6 +31,14 @@ namespace AkademAndroidMobile
         List<string> listItems2 = new List<string>();
         ArrayAdapter<string> adapter1, adapter2;
 
+
+        //Листинг обьектов для автокомплита
+        static string[] COUNTRIES = new string[] {
+          "Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra",
+          "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina",
+          "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan"
+        };
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -47,7 +55,6 @@ namespace AkademAndroidMobile
             ab.Title = "Новая заявка";
             ab.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
             ab.SetDisplayHomeAsUpEnabled(true);
-
 
 
             //Выпадающее меню слева
@@ -108,6 +115,12 @@ namespace AkademAndroidMobile
                         })
                         .Show();
             };
+
+            //Автокомплит
+            AutoCompleteTextView textView = FindViewById<AutoCompleteTextView>(Resource.Id.autocomplete_txtInputHouse);
+            var adapter = new ArrayAdapter<String>(this, Resource.Layout.autocomplete, COUNTRIES);
+
+            textView.Adapter = adapter;
 
         }
 

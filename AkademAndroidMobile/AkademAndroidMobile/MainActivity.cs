@@ -43,6 +43,7 @@ namespace AkademAndroidMobile
             //Клик по карточке
             FrameLayout _mCardView = FindViewById<FrameLayout>(Resource.Id.test_card_id);
             _mCardView.Click += _mCardView_Click;
+            _mCardView.LongClick += _mCardView_LongClick;
 
             //Парящая кнопка
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
@@ -57,12 +58,20 @@ namespace AkademAndroidMobile
 
         }
 
+        
+
         //Клик по карточке функция
         private void _mCardView_Click(object sender, EventArgs e)
         {
             Intent intent = new Intent(this, typeof(RequestCardActivity));
             StartActivity(intent);
             OverridePendingTransition(Android.Resource.Animation.SlideOutRight, Android.Resource.Animation.SlideInLeft);
+        }
+
+        //Длинный по карточке функция
+        private void _mCardView_LongClick(object sender, View.LongClickEventArgs e)
+        {
+            Toast.MakeText(this, "Длинный клик", ToastLength.Short).Show();
         }
 
         //Навигация по клику

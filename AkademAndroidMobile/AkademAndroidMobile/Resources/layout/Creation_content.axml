@@ -21,13 +21,23 @@
               android:id="@+id/txtInputLayoutHouse"
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
-              <EditText
+              <AutoCompleteTextView android:id="@+id/autocomplete_txtInputHouse"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:inputType="text"
+                  android:hint="Дом"/>
+            <!--<com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
                   android:id="@+id/txtInputHouse"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:layout_gravity="center"
                   android:inputType="text"
-                  android:hint="Дом" />
+                  android:hint="Дом"
+                  app:pacv_googleMapsApiKey="AIzaSyAaglhPpP52XMJw1dV5ihjykCFHE49-cZA"/>-->
+                   <!--Источники-->
+                   <!--https://github.com/seatgeek/android-PlacesAutocompleteTextView-->
+                   <!--https://developers.google.com/places/android-api/autocomplete-->
           </android.support.design.widget.TextInputLayout>
           <LinearLayout
               android:orientation="horizontal"

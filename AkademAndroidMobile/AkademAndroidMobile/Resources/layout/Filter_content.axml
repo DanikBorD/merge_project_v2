@@ -98,32 +98,30 @@
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:orientation="horizontal">
-                  <android.support.design.widget.TextInputLayout
-                      android:id="@+id/StartPeriodLayout"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1">
-                        <EditText
-                            android:id="@+id/StartPeriod"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:inputType="number"
-                            android:hint="Период от" />
-                  </android.support.design.widget.TextInputLayout>
-                  <android.support.design.widget.TextInputLayout
-                        android:id="@+id/EndPeriodLayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-                    <EditText
-                        android:id="@+id/EndPeriod"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                  <LinearLayout
+                   android:id="@+id/InputLayoutDateFrom"
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/InputDateFrom"
+                        android:text="Период от"
                         android:layout_gravity="center"
-                        android:inputType="number"
-                        android:hint="Период до" />
-                  </android.support.design.widget.TextInputLayout>
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                  </LinearLayout>
+                  <LinearLayout
+                     android:id="@+id/InputLayoutDateTo"
+                     android:layout_weight="1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/InputDateTo"
+                        android:text="Период до"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                  </LinearLayout>
               </LinearLayout>
           </LinearLayout>
       </ScrollView>

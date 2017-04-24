@@ -14,6 +14,8 @@ using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 using SupportActionBar = Android.Support.V7.App.ActionBar;
 using Android.Support.Design.Widget;
 using FR.Ganfra.Materialspinner;
+using AkademAndroidMobile.Resources.fragments;
+using System.Globalization;
 
 namespace AkademAndroidMobile
 {
@@ -28,6 +30,7 @@ namespace AkademAndroidMobile
         List<string> listItems4 = new List<string>();
         List<string> listItems5 = new List<string>();
         ArrayAdapter<string> adapter1, adapter2, adapter3, adapter4, adapter5;
+        Button _dateSelectButtonFrom, _dateSelectButtonTo;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -101,6 +104,13 @@ namespace AkademAndroidMobile
             adapter5.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             _spinner5.Adapter = adapter5;
             _spinner5.ItemSelected += _spinner_ItemSelected;
+
+            //Выбор даты
+            _dateSelectButtonFrom = FindViewById<Button>(Resource.Id.InputDateFrom);
+            _dateSelectButtonFrom.Click += DateSelect_OnClick_From;
+
+            _dateSelectButtonTo = FindViewById<Button>(Resource.Id.InputDateTo);
+            _dateSelectButtonTo.Click += DateSelect_OnClick_To;
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -119,6 +129,25 @@ namespace AkademAndroidMobile
                 if (selected_position % 2 == 0)
                     Console.WriteLine("Ошибка выбора");
             }
+        }
+
+        //При клике на выбор даты
+        void DateSelect_OnClick_From(object sender, EventArgs eventArgs)
+        {
+            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            {
+                _dateSelectButtonFrom.Text = time.ToString("d", CultureInfo.CreateSpecificCulture("ru-RU"));
+            });
+            frag.Show(FragmentManager, DatePickerFragment.TAG);
+        }
+
+        void DateSelect_OnClick_To(object sender, EventArgs eventArgs)
+        {
+            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            {
+                _dateSelectButtonTo.Text = time.ToString("d", CultureInfo.CreateSpecificCulture("ru-RU"));
+            });
+            frag.Show(FragmentManager, DatePickerFragment.TAG);
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
