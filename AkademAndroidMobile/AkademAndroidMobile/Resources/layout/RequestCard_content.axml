@@ -186,6 +186,99 @@
                   </LinearLayout>
                 </LinearLayout>
 
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:background="@drawable/counter_gradient_back"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/hour_CountDown"
+                            android:text="2"
+                            android:textSize="80sp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:background="@drawable/counter_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:id="@+id/minute_CountDown"
+                            android:text="30"
+                            android:textSize="80sp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:background="@drawable/counter_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="часов"
+                            android:textSize="14sp"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:background="@drawable/counter_back"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="минут"
+                            android:textSize="14sp"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:background="@drawable/counter_back"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:padding="10dp"
+                            android:background="@drawable/counter_back_button"
+                            android:text="ПРИОСТАНОВИТЬ"
+                            android:textColor="#fff"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:padding="10dp"
+                            android:background="@drawable/counter_back_button"
+                            android:text="ВЕРНУТЬ"
+                            android:textColor="#fff"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:padding="10dp"
+                            android:background="@drawable/counter_back_button"
+                            android:text="ГОТОВО"
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+                </LinearLayout>
+
                 <!--Блок 2-->
                 <LinearLayout
                     android:orientation="vertical"
@@ -212,6 +305,7 @@
                           app:ms_hint="Подрядчик"
                           app:ms_hintColor="#ccc"/>
                       <ImageView
+                            android:id="@+id/callPhoneContractor"
                             android:src="@drawable/ic_contacts_24dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -369,31 +463,46 @@
                   <LinearLayout
                       android:orientation="horizontal"
                       android:background="#fff"
+                      android:paddingTop="8dp"
+                      android:paddingBottom="8dp"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content">
-                    <LinearLayout
-                      android:orientation="vertical"
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:text="Васильев Геннадий Павлович"
+                          android:textSize="16sp"
+                          android:textColor="#000"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content"
+                          android:gravity="center_vertical"/>
+                      <ImageView
+                          android:src="@drawable/ic_contacts_24dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center_vertical"
+                          android:layout_weight="6"/>
+                  </LinearLayout>
+                  <LinearLayout
+                      android:orientation="horizontal"
+                      android:background="#fff"
+                      android:paddingTop="8dp"
+                      android:paddingBottom="8dp"
                       android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1">
+                      android:layout_height="wrap_content">
                       <TextView
-                        android:layout_width="match_parent"
-                        android:text="Васильев Геннадий Павлович"
-                        android:textSize="16sp"
-                        android:textColor="#000"
-                        android:layout_height="wrap_content"/>
-                      <TextView
-                        android:layout_width="match_parent"
-                        android:text="Васильева Ольга Алексеевна"
-                        android:textSize="16sp"
-                        android:textColor="#000"
-                        android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                    <ImageView
-                        android:src="@drawable/ic_contacts_24dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"/>
+                          android:layout_width="match_parent"
+                          android:text="Васильева Ольга Алексеевна"
+                          android:textSize="16sp"
+                          android:textColor="#000"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content"
+                          android:gravity="center_vertical"/>
+                      <ImageView
+                          android:src="@drawable/ic_contacts_24dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center_vertical"
+                          android:layout_weight="6"/>
                   </LinearLayout>
                 </LinearLayout>
               </LinearLayout>

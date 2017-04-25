@@ -24,6 +24,7 @@ namespace AkademAndroidMobile
         MaterialSpinner _spinner;
         List<string> listItems = new List<string>();
         ArrayAdapter<string> adapter;
+        ImageView _CallPhoneContractor;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -47,6 +48,19 @@ namespace AkademAndroidMobile
             _spinner.Adapter = adapter;
             _spinner.ItemSelected += _spinner_ItemSelected;
 
+            //Звонилка подрядчику
+            _CallPhoneContractor = FindViewById<ImageView>(Resource.Id.callPhoneContractor);
+            _CallPhoneContractor.Click += _CallPhoneContractor_Click;
+
+        }
+
+        //Звонилка подрядчику функция
+        private void _CallPhoneContractor_Click(object sender, EventArgs e)
+        {
+            // Create intent to dial phone
+            var callIntent = new Intent(Intent.ActionCall);
+            callIntent.SetData(Android.Net.Uri.Parse("tel:123456789"));
+            StartActivity(callIntent);
         }
 
         //Функия спиннера
