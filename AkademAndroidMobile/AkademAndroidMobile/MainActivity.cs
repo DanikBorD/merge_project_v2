@@ -17,6 +17,10 @@ namespace AkademAndroidMobile
     [Activity(Theme = "@style/MyCustomTheme", Label = "AkademAndroidMobile", Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
+        TextView currentTemp;
+        TextView currentStatus;
+        Button changeBtn;
+
         //private DrawerLayout _mDrawerLayout;
         protected override void OnCreate(Bundle bundle)
         {
@@ -24,7 +28,8 @@ namespace AkademAndroidMobile
 
             SetContentView (Resource.Layout.MainDisplay);
 
-
+            changeBtn = FindViewById<Button>(Resource.Id.changeBtn);
+            changeBtn.Click += changeBtn_Click;
 
             //SupportActionBar ab = SupportActionBar;
             //ab.Title = "Заявки";
@@ -55,6 +60,13 @@ namespace AkademAndroidMobile
             //    OverridePendingTransition(Android.Resource.Animation.SlideInLeft, Android.Resource.Animation.SlideOutRight);
             //};
 
+        }
+
+        private void changeBtn_Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(ChangeActivity));
+            StartActivity(intent);
+            OverridePendingTransition(Android.Resource.Animation.SlideInLeft, Android.Resource.Animation.SlideOutRight);
         }
 
         //Длинный по карточке функция

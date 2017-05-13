@@ -63,7 +63,7 @@
             android:text="Управлять температурой"
             android:layout_width="330.0dp"
             android:layout_height="95.5dp"
-            android:id="@+id/connectBtn"
+            android:id="@+id/changeBtn"
             android:layout_marginTop="40.0dp"
             android:layout_marginLeft="0.0dp"
             android:layout_gravity="center_horizontal"

@@ -152,6 +152,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeActivity.cs" />
     <Compile Include="ContactsActivity.cs" />
     <Compile Include="CreationActivity.cs" />
     <Compile Include="FilterActivity.cs" />
