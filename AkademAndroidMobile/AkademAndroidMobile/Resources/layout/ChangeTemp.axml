@@ -4,193 +4,198 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light">
-    <CheckBox
+  <CheckBox
+    android:textColor="#fff"
         android:text="Автоматический режим"
         android:layout_width="match_parent"
         android:layout_height="50.0dp"
         android:id="@+id/IsAutomaticCheckBox"
-        android:background="@color/green"
+        android:background="@color/green_dark"
         android:textSize="20.0dp" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+<!--<LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/linearLayout1"
+      android:layout_marginTop="40"
+      android:background="@color/green">
+
+
+
+    <TextView
+                android:textColor="#fff"
+                android:text="Температура в помещении"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:textSize="20"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10" />
+    <TextView
+        android:textColor="#fff"
+        android:text="5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:layout_marginTop="40"
-        android:background="@color/blue">
-        <TextView
-            style="@style/edittext_prompttext"
-            android:text="Температура в помещении"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/textView1"
-            android:textSize="20"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
-            android:layout_marginLeft="10" />
-        <TextView
-            android:text="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/RoomTemperatureTextView"
-            android:layout_marginLeft="15.5dp"
-            android:textColor="@android:color/background_dark"
-            android:layout_gravity="center"
-            android:textSize="30" />
-        <ImageButton
-            android:src="@drawable/up"
-            android:layout_width="27.5dp"
-            android:layout_height="match_parent"
-            android:id="@+id/UpRoomTemperatureButton"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            android:layout_marginLeft="12.5dp" />
-        <ImageButton
-            android:src="@drawable/down"
-            android:layout_width="27.5dp"
-            android:layout_height="match_parent"
-            android:id="@+id/DownRoomTemperatureButton"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            android:layout_marginLeft="1.5dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout2"
-        android:layout_marginTop="20"
-        android:background="@android:drawable/screen_background_dark_transparent">
-        <TextView
-            android:text="Кондиционер"
-            android:layout_width="270"
-            android:layout_height="match_parent"
-            android:id="@+id/textView2"
-            android:textColor="@android:color/background_dark"
-            android:textSize="20"
-            android:layout_marginLeft="10"
-            android:gravity="center_vertical" />
-        <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/ConditionalToggleButton"
-            android:layout_gravity="right" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:background="@android:drawable/screen_background_dark_transparent">
-        <TextView
-            android:text="Температура"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/textView1"
-            android:textColor="@android:color/background_dark"
-            android:textSize="20"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
-            android:layout_marginLeft="10"
-            android:layout_marginRight="132" />
-        <TextView
-            android:text="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ConditionalTemperatureTextView"
-            android:layout_marginLeft="15.5dp"
-            android:textColor="@android:color/background_dark"
-            android:layout_gravity="center"
-            android:textSize="30" />
-        <ImageButton
-            android:src="@drawable/up"
-            android:layout_width="27.5dp"
-            android:layout_height="match_parent"
-            android:id="@+id/UpConditionalTemperatureButton"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            android:layout_marginLeft="12.5dp" />
-        <ImageButton
-            android:src="@drawable/down"
-            android:layout_width="27.5dp"
-            android:layout_height="match_parent"
-            android:id="@+id/DownConditionalTemperatureButton"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            android:layout_marginLeft="1.5dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout2"
-        android:layout_marginTop="20"
-        android:background="@android:drawable/screen_background_dark_transparent">
-        <TextView
-            android:text="Обогреватель"
-            android:layout_width="270"
-            android:layout_height="match_parent"
-            android:id="@+id/textView2"
-            android:textColor="@android:color/background_dark"
-            android:textSize="20"
-            android:layout_marginLeft="10"
-            android:gravity="center_vertical" />
-        <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/HeaterToggleButton"
-            android:layout_gravity="right" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:background="@android:drawable/screen_background_dark_transparent"
-        android:layout_gravity="right">
-        <TextView
-            android:text="Температура"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/textView1"
-            android:textColor="@android:color/background_dark"
-            android:textSize="20"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
-            android:layout_marginLeft="10"
-            android:layout_marginRight="130.0dp" />
-        <TextView
-            android:text="15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/RoomTemperatureTextView"
-            android:textColor="@android:color/background_dark"
-            android:layout_gravity="center"
-            android:textSize="30" />
-        <ImageButton
-            android:src="@drawable/up"
-            android:layout_width="27.5dp"
-            android:layout_height="33.5dp"
-            android:id="@+id/UpHeaterTemperatureButton"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            android:layout_marginLeft="12.5dp" />
-        <ImageButton
-            android:src="@drawable/down"
-            android:layout_width="27.5dp"
-            android:layout_height="match_parent"
-            android:id="@+id/DownHeaterTemperatureButton"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            android:layout_marginLeft="1.5dp"
-            android:layout_gravity="right" />
-    </LinearLayout>
-    <ImageButton
-        android:src="@drawable/accept"
-        android:layout_width="179.0dp"
-        android:layout_height="68.5dp"
-        android:id="@+id/imageButton1"
+        android:id="@+id/RoomTemperatureTextView"
+        android:layout_marginLeft="15.5dp"
         android:layout_gravity="center"
-        android:layout_marginTop="60"
-        android:scaleType="fitCenter" />
+        android:textSize="30" />
+    <ImageButton
+        android:src="@drawable/up"
+        android:layout_width="27.5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/UpRoomTemperatureButton"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="12.5dp" />
+    <ImageButton
+        android:src="@drawable/down"
+        android:layout_width="27.5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/DownRoomTemperatureButton"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="1.5dp" />
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/linearLayout2"
+      android:layout_marginTop="20"
+      android:background="@android:drawable/screen_background_dark_transparent">
+    <TextView
+        android:textColor="#fff"
+        android:text="Кондиционер"
+        android:layout_width="270"
+        android:layout_height="match_parent"
+        android:id="@+id/textView2"
+        android:textSize="20"
+        android:layout_marginLeft="10"
+        android:gravity="center_vertical" />
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/ConditionalToggleButton"
+        android:layout_gravity="right" />
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/linearLayout1"
+      android:background="@android:drawable/screen_background_dark_transparent">
+    <TextView
+        android:textColor="#fff"
+        android:text="Температура"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textView1"
+        android:textSize="20"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10"
+        android:layout_marginRight="132" />
+    <TextView
+        android:textColor="#fff"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ConditionalTemperatureTextView"
+        android:layout_marginLeft="15.5dp"
+        android:layout_gravity="center"
+        android:textSize="30" />
+    <ImageButton
+        android:src="@drawable/up"
+        android:layout_width="27.5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/UpConditionalTemperatureButton"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="12.5dp" />
+    <ImageButton
+        android:src="@drawable/down"
+        android:layout_width="27.5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/DownConditionalTemperatureButton"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="1.5dp" />
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/linearLayout2"
+      android:layout_marginTop="20"
+      android:background="@android:drawable/screen_background_dark_transparent">
+    <TextView
+        android:textColor="#fff"
+        android:text="Обогреватель"
+        android:layout_width="270"
+        android:layout_height="match_parent"
+        android:id="@+id/textView2"
+        android:textSize="20"
+        android:layout_marginLeft="10"
+        android:gravity="center_vertical" />
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/HeaterToggleButton"
+        android:layout_gravity="right" />
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/linearLayout1"
+      android:background="@android:drawable/screen_background_dark_transparent"
+      android:layout_gravity="right">
+    <TextView
+        android:textColor="#fff"
+        android:text="Температура"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textView1"
+        android:textSize="20"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10"
+        android:layout_marginRight="130.0dp" />
+    <TextView
+        android:textColor="#fff"
+        android:text="15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RoomTemperatureTextView"
+        android:layout_gravity="center"
+        android:textSize="30" />
+    <ImageButton
+        android:src="@drawable/up"
+        android:layout_width="27.5dp"
+        android:layout_height="33.5dp"
+        android:id="@+id/UpHeaterTemperatureButton"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="12.5dp" />
+    <ImageButton
+        android:src="@drawable/down"
+        android:layout_width="27.5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/DownHeaterTemperatureButton"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="1.5dp"
+        android:layout_gravity="right" />
+  </LinearLayout>
+  <ImageButton
+      style="@style/yellow_button"
+      android:src="@drawable/accept"
+      android:layout_width="304.0dp"
+      android:layout_height="68.5dp"
+      android:id="@+id/imageButton1"
+      android:layout_gravity="center"
+      android:layout_marginTop="60"
+      android:scaleType="fitCenter" />-->
 </LinearLayout>
