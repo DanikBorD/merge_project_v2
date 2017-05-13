@@ -24,55 +24,44 @@ namespace AkademAndroidMobile
 
             SetContentView (Resource.Layout.Main);
 
-            SupportToolbar mToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(mToolbar);
+
 
             SupportActionBar ab = SupportActionBar;
             ab.Title = "Заявки";
             ab.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
             ab.SetDisplayHomeAsUpEnabled(true);
 
-            //Выпадающее меню слева
-            _mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            NavigationView mLeftDrawer = FindViewById<NavigationView>(Resource.Id.left_drawer);
-            if (mLeftDrawer != null)
-            {
-                SetUpDrawerContent(mLeftDrawer);
-            }
+            ////Выпадающее меню слева
+            //_mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+            //NavigationView mLeftDrawer = FindViewById<NavigationView>(Resource.Id.left_drawer);
+            //if (mLeftDrawer != null)
+            //{
+            //    SetUpDrawerContent(mLeftDrawer);
+            //}
 
             //Клик по карточке
-            FrameLayout _mCardView = FindViewById<FrameLayout>(Resource.Id.test_card_id);
-            _mCardView.Click += _mCardView_Click;
-            _mCardView.LongClick += _mCardView_LongClick;
+            //FrameLayout _mCardView = FindViewById<FrameLayout>(Resource.Id.test_card_id);
+            ////_mCardView.Click += _mCardView_Click;
+            //_mCardView.LongClick += _mCardView_LongClick;
 
             //Парящая кнопка
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += (o, e) =>
-            {
-                View anchor = o as View;
+            //FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+            //fab.Click += (o, e) =>
+            //{
+            //    View anchor = o as View;
 
-                Intent intent = new Intent(fab.Context, typeof(CreationActivity));
-                StartActivity(intent);
-                OverridePendingTransition(Android.Resource.Animation.SlideInLeft, Android.Resource.Animation.SlideOutRight);
-            };
+            //    Intent intent = new Intent(fab.Context, typeof(CreationActivity));
+            //    StartActivity(intent);
+            //    OverridePendingTransition(Android.Resource.Animation.SlideInLeft, Android.Resource.Animation.SlideOutRight);
+            //};
 
-        }
-
-        
-
-        //Клик по карточке функция
-        private void _mCardView_Click(object sender, EventArgs e)
-        {
-            Intent intent = new Intent(this, typeof(RequestCardActivity));
-            StartActivity(intent);
-            OverridePendingTransition(Android.Resource.Animation.SlideOutRight, Android.Resource.Animation.SlideInLeft);
         }
 
         //Длинный по карточке функция
-        private void _mCardView_LongClick(object sender, View.LongClickEventArgs e)
-        {
-            Toast.MakeText(this, "Длинный клик", ToastLength.Short).Show();
-        }
+        //private void _mCardView_LongClick(object sender, View.LongClickEventArgs e)
+        //{
+        //    Toast.MakeText(this, "Длинный клик", ToastLength.Short).Show();
+        //}
 
         //Навигация по клику
         private void SetUpDrawerContent(NavigationView mLeftDrawer)
@@ -112,32 +101,32 @@ namespace AkademAndroidMobile
             };
         }
 
-        //Создание меню в тулбаре
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.Top_menus, menu);
-            return true;
-        }
+        ////Создание меню в тулбаре
+        //public override bool OnCreateOptionsMenu(IMenu menu)
+        //{
+        //    MenuInflater.Inflate(Resource.Menu.Top_menus, menu);
+        //    return true;
+        //}
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            switch (item.ItemId)
-            {
-                case Android.Resource.Id.Home:
-                    //Обрабатывает клик по бургеру, и выводит навигацию
-                    _mDrawerLayout.OpenDrawer((int)GravityFlags.Left);
-                    return true;
+        //public override bool OnOptionsItemSelected(IMenuItem item)
+        //{
+        //    switch (item.ItemId)
+        //    {
+        //        case Android.Resource.Id.Home:
+        //            //Обрабатывает клик по бургеру, и выводит навигацию
+        //            _mDrawerLayout.OpenDrawer((int)GravityFlags.Left);
+        //            return true;
 
-                case Resource.Id.menu_filter:
-                    Intent intent = new Intent(this, typeof(FilterActivity));
-                    StartActivity(intent);
-                    return true;
+        //        case Resource.Id.menu_filter:
+        //            Intent intent = new Intent(this, typeof(FilterActivity));
+        //            StartActivity(intent);
+        //            return true;
 
-                default:
-                    Toast.MakeText(this, "Action selected: " + item.TitleFormatted, ToastLength.Short).Show();
-                    return base.OnOptionsItemSelected(item);
-            }
-        }
+        //        default:
+        //            Toast.MakeText(this, "Action selected: " + item.TitleFormatted, ToastLength.Short).Show();
+        //            return base.OnOptionsItemSelected(item);
+        //    }
+        //}
 
     }
 }

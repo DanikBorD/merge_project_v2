@@ -2861,6 +2861,9 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0083
 			public const int Contacts_content = 2131361923;
 			
+			// aapt resource value: 0x7f0a00b1
+			public const int CurrenttempTextView = 2131361969;
+			
 			// aapt resource value: 0x7f0a008e
 			public const int InputDate = 2131361934;
 			
@@ -2891,8 +2894,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a00a6
 			public const int OrderNumberLayout = 2131361958;
 			
-			// aapt resource value: 0x7f0a00b5
-			public const int action0 = 2131361973;
+			// aapt resource value: 0x7f0a00b7
+			public const int action0 = 2131361975;
 			
 			// aapt resource value: 0x7f0a0072
 			public const int action_bar = 2131361906;
@@ -2915,17 +2918,17 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a004f
 			public const int action_bar_title = 2131361871;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int action_container = 2131361970;
+			// aapt resource value: 0x7f0a00b4
+			public const int action_container = 2131361972;
 			
 			// aapt resource value: 0x7f0a0073
 			public const int action_context_bar = 2131361907;
 			
-			// aapt resource value: 0x7f0a00b9
-			public const int action_divider = 2131361977;
+			// aapt resource value: 0x7f0a00bb
+			public const int action_divider = 2131361979;
 			
-			// aapt resource value: 0x7f0a00b3
-			public const int action_image = 2131361971;
+			// aapt resource value: 0x7f0a00b5
+			public const int action_image = 2131361973;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -2942,11 +2945,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0051
 			public const int action_mode_close_button = 2131361873;
 			
-			// aapt resource value: 0x7f0a00b4
-			public const int action_text = 2131361972;
+			// aapt resource value: 0x7f0a00b6
+			public const int action_text = 2131361974;
 			
-			// aapt resource value: 0x7f0a00c2
-			public const int actions = 2131361986;
+			// aapt resource value: 0x7f0a00c4
+			public const int actions = 2131361988;
 			
 			// aapt resource value: 0x7f0a0052
 			public const int activity_chooser_view_content = 2131361874;
@@ -2987,11 +2990,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0059
 			public const int buttonPanel = 2131361881;
 			
-			// aapt resource value: 0x7f0a00d3
-			public const int callPhoneContractor = 2131362003;
+			// aapt resource value: 0x7f0a00d5
+			public const int callPhoneContractor = 2131362005;
 			
-			// aapt resource value: 0x7f0a00b6
-			public const int cancel_action = 2131361974;
+			// aapt resource value: 0x7f0a00b8
+			public const int cancel_action = 2131361976;
 			
 			// aapt resource value: 0x7f0a003a
 			public const int center = 2131361850;
@@ -3005,8 +3008,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0069
 			public const int checkbox = 2131361897;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int chronometer = 2131361982;
+			// aapt resource value: 0x7f0a00c0
+			public const int chronometer = 2131361984;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int clip_horizontal = 2131361859;
@@ -3077,8 +3080,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a002c
 			public const int end = 2131361836;
 			
-			// aapt resource value: 0x7f0a00c8
-			public const int end_padder = 2131361992;
+			// aapt resource value: 0x7f0a00ca
+			public const int end_padder = 2131361994;
 			
 			// aapt resource value: 0x7f0a0035
 			public const int enterAlways = 2131361845;
@@ -3116,6 +3119,9 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0049
 			public const int @fixed = 2131361865;
 			
+			// aapt resource value: 0x7f0a00b2
+			public const int frameLayout1 = 2131361970;
+			
 			// aapt resource value: 0x7f0a004d
 			public const int geocode = 2131361869;
 			
@@ -3125,8 +3131,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a001f
 			public const int homeAsUp = 2131361823;
 			
-			// aapt resource value: 0x7f0a00d1
-			public const int hour_CountDown = 2131362001;
+			// aapt resource value: 0x7f0a00d3
+			public const int hour_CountDown = 2131362003;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int hybrid = 2131361807;
@@ -3134,8 +3140,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0057
 			public const int icon = 2131361879;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int icon_group = 2131361987;
+			// aapt resource value: 0x7f0a00c5
+			public const int icon_group = 2131361989;
 			
 			// aapt resource value: 0x7f0a0016
 			public const int icon_only = 2131361814;
@@ -3146,11 +3152,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0054
 			public const int image = 2131361876;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int imgViewHeader = 2131361969;
+			// aapt resource value: 0x7f0a00b3
+			public const int imgViewHeader = 2131361971;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int info = 2131361983;
+			// aapt resource value: 0x7f0a00c1
+			public const int info = 2131361985;
 			
 			// aapt resource value: 0x7f0a00ad
 			public const int ip = 2131361965;
@@ -3170,11 +3176,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a001b
 			public const int light = 2131361819;
 			
-			// aapt resource value: 0x7f0a00c4
-			public const int line1 = 2131361988;
-			
 			// aapt resource value: 0x7f0a00c6
-			public const int line3 = 2131361990;
+			public const int line1 = 2131361990;
+			
+			// aapt resource value: 0x7f0a00c8
+			public const int line3 = 2131361992;
 			
 			// aapt resource value: 0x7f0a0081
 			public const int linearLayout1 = 2131361921;
@@ -3188,20 +3194,20 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0085
 			public const int main_content = 2131361925;
 			
-			// aapt resource value: 0x7f0a00d6
-			public const int masked = 2131362006;
+			// aapt resource value: 0x7f0a00d8
+			public const int masked = 2131362008;
 			
-			// aapt resource value: 0x7f0a00b8
-			public const int media_actions = 2131361976;
-			
-			// aapt resource value: 0x7f0a00df
-			public const int menu_close = 2131362015;
+			// aapt resource value: 0x7f0a00ba
+			public const int media_actions = 2131361978;
 			
 			// aapt resource value: 0x7f0a00e1
-			public const int menu_filter = 2131362017;
+			public const int menu_close = 2131362017;
 			
-			// aapt resource value: 0x7f0a00e0
-			public const int menu_place = 2131362016;
+			// aapt resource value: 0x7f0a00e3
+			public const int menu_filter = 2131362019;
+			
+			// aapt resource value: 0x7f0a00e2
+			public const int menu_place = 2131362018;
 			
 			// aapt resource value: 0x7f0a002d
 			public const int middle = 2131361837;
@@ -3209,35 +3215,35 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0048
 			public const int mini = 2131361864;
 			
-			// aapt resource value: 0x7f0a00d2
-			public const int minute_CountDown = 2131362002;
+			// aapt resource value: 0x7f0a00d4
+			public const int minute_CountDown = 2131362004;
 			
 			// aapt resource value: 0x7f0a0025
 			public const int multiply = 2131361829;
 			
-			// aapt resource value: 0x7f0a00db
-			public const int nav_contacts = 2131362011;
-			
-			// aapt resource value: 0x7f0a00d8
-			public const int nav_create_req = 2131362008;
-			
-			// aapt resource value: 0x7f0a00de
-			public const int nav_exit = 2131362014;
-			
-			// aapt resource value: 0x7f0a00d9
-			public const int nav_list_req = 2131362009;
-			
-			// aapt resource value: 0x7f0a00d7
-			public const int nav_main_group = 2131362007;
+			// aapt resource value: 0x7f0a00dd
+			public const int nav_contacts = 2131362013;
 			
 			// aapt resource value: 0x7f0a00da
-			public const int nav_map = 2131362010;
+			public const int nav_create_req = 2131362010;
 			
-			// aapt resource value: 0x7f0a00dd
-			public const int nav_settings = 2131362013;
+			// aapt resource value: 0x7f0a00e0
+			public const int nav_exit = 2131362016;
+			
+			// aapt resource value: 0x7f0a00db
+			public const int nav_list_req = 2131362011;
+			
+			// aapt resource value: 0x7f0a00d9
+			public const int nav_main_group = 2131362009;
 			
 			// aapt resource value: 0x7f0a00dc
-			public const int nav_sub_group = 2131362012;
+			public const int nav_map = 2131362012;
+			
+			// aapt resource value: 0x7f0a00df
+			public const int nav_settings = 2131362015;
+			
+			// aapt resource value: 0x7f0a00de
+			public const int nav_sub_group = 2131362014;
 			
 			// aapt resource value: 0x7f0a009c
 			public const int navigation_header_container = 2131361948;
@@ -3254,14 +3260,14 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0011
 			public const int normal = 2131361809;
 			
-			// aapt resource value: 0x7f0a00c1
-			public const int notification_background = 2131361985;
+			// aapt resource value: 0x7f0a00c3
+			public const int notification_background = 2131361987;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int notification_main_column = 2131361979;
+			// aapt resource value: 0x7f0a00bd
+			public const int notification_main_column = 2131361981;
 			
-			// aapt resource value: 0x7f0a00ba
-			public const int notification_main_column_container = 2131361978;
+			// aapt resource value: 0x7f0a00bc
+			public const int notification_main_column_container = 2131361980;
 			
 			// aapt resource value: 0x7f0a0041
 			public const int parallax = 2131361857;
@@ -3272,29 +3278,29 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0042
 			public const int pin = 2131361858;
 			
-			// aapt resource value: 0x7f0a00cb
-			public const int place_autocomplete_clear_button = 2131361995;
-			
 			// aapt resource value: 0x7f0a00cd
-			public const int place_autocomplete_powered_by_google = 2131361997;
+			public const int place_autocomplete_clear_button = 2131361997;
 			
 			// aapt resource value: 0x7f0a00cf
-			public const int place_autocomplete_prediction_primary_text = 2131361999;
+			public const int place_autocomplete_powered_by_google = 2131361999;
+			
+			// aapt resource value: 0x7f0a00d1
+			public const int place_autocomplete_prediction_primary_text = 2131362001;
+			
+			// aapt resource value: 0x7f0a00d2
+			public const int place_autocomplete_prediction_secondary_text = 2131362002;
 			
 			// aapt resource value: 0x7f0a00d0
-			public const int place_autocomplete_prediction_secondary_text = 2131362000;
+			public const int place_autocomplete_progress = 2131362000;
 			
-			// aapt resource value: 0x7f0a00ce
-			public const int place_autocomplete_progress = 2131361998;
-			
-			// aapt resource value: 0x7f0a00c9
-			public const int place_autocomplete_search_button = 2131361993;
-			
-			// aapt resource value: 0x7f0a00ca
-			public const int place_autocomplete_search_input = 2131361994;
+			// aapt resource value: 0x7f0a00cb
+			public const int place_autocomplete_search_button = 2131361995;
 			
 			// aapt resource value: 0x7f0a00cc
-			public const int place_autocomplete_separator = 2131361996;
+			public const int place_autocomplete_search_input = 2131361996;
+			
+			// aapt resource value: 0x7f0a00ce
+			public const int place_autocomplete_separator = 2131361998;
 			
 			// aapt resource value: 0x7f0a00ae
 			public const int port = 2131361966;
@@ -3323,11 +3329,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a003f
 			public const int right = 2131361855;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int right_icon = 2131361984;
+			// aapt resource value: 0x7f0a00c2
+			public const int right_icon = 2131361986;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int right_side = 2131361980;
+			// aapt resource value: 0x7f0a00be
+			public const int right_side = 2131361982;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int satellite = 2131361810;
@@ -3428,8 +3434,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0040
 			public const int start = 2131361856;
 			
-			// aapt resource value: 0x7f0a00b7
-			public const int status_bar_latest_event_content = 2131361975;
+			// aapt resource value: 0x7f0a00b9
+			public const int status_bar_latest_event_content = 2131361977;
 			
 			// aapt resource value: 0x7f0a006c
 			public const int submenuarrow = 2131361900;
@@ -3443,14 +3449,14 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0013
 			public const int terrain = 2131361811;
 			
-			// aapt resource value: 0x7f0a00d4
-			public const int test_card_id = 2131362004;
+			// aapt resource value: 0x7f0a00d6
+			public const int test_card_id = 2131362006;
+			
+			// aapt resource value: 0x7f0a00c9
+			public const int text = 2131361993;
 			
 			// aapt resource value: 0x7f0a00c7
-			public const int text = 2131361991;
-			
-			// aapt resource value: 0x7f0a00c5
-			public const int text2 = 2131361989;
+			public const int text2 = 2131361991;
 			
 			// aapt resource value: 0x7f0a0060
 			public const int textSpacerNoButtons = 2131361888;
@@ -3467,8 +3473,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a000d
 			public const int textinput_error = 2131361805;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int time = 2131361981;
+			// aapt resource value: 0x7f0a00bf
+			public const int time = 2131361983;
 			
 			// aapt resource value: 0x7f0a0058
 			public const int title = 2131361880;
@@ -3524,8 +3530,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a000e
 			public const int view_offset_helper = 2131361806;
 			
-			// aapt resource value: 0x7f0a00d5
-			public const int visible = 2131362005;
+			// aapt resource value: 0x7f0a00d7
+			public const int visible = 2131362007;
 			
 			// aapt resource value: 0x7f0a0018
 			public const int wide = 2131361816;
@@ -3743,91 +3749,94 @@ namespace AkademAndroidMobile
 			public const int Main = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int Map_content = 2130903090;
+			public const int MainDisplay = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int Nav_header = 2130903091;
+			public const int Map_content = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_action = 2130903092;
+			public const int Nav_header = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_action_tombstone = 2130903093;
+			public const int notification_action = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_media_action = 2130903094;
+			public const int notification_action_tombstone = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_media_cancel_action = 2130903095;
+			public const int notification_media_action = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_template_big_media = 2130903096;
+			public const int notification_media_cancel_action = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_template_big_media_custom = 2130903097;
+			public const int notification_template_big_media = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_big_media_narrow = 2130903098;
+			public const int notification_template_big_media_custom = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_big_media_narrow_custom = 2130903099;
+			public const int notification_template_big_media_narrow = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_custom_big = 2130903100;
+			public const int notification_template_big_media_narrow_custom = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_template_icon_group = 2130903101;
+			public const int notification_template_custom_big = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int notification_template_lines_media = 2130903102;
+			public const int notification_template_icon_group = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int notification_template_media = 2130903103;
+			public const int notification_template_lines_media = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int notification_template_media_custom = 2130903104;
+			public const int notification_template_media = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int notification_template_part_chronometer = 2130903105;
+			public const int notification_template_media_custom = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int notification_template_part_time = 2130903106;
+			public const int notification_template_part_chronometer = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int pacv_maps_autocomplete_item = 2130903107;
+			public const int notification_template_part_time = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int place_autocomplete_fragment = 2130903108;
+			public const int pacv_maps_autocomplete_item = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int place_autocomplete_item_powered_by_google = 2130903109;
+			public const int place_autocomplete_fragment = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int place_autocomplete_item_prediction = 2130903110;
+			public const int place_autocomplete_item_powered_by_google = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int place_autocomplete_progress = 2130903111;
+			public const int place_autocomplete_item_prediction = 2130903111;
 			
 			// aapt resource value: 0x7f030048
-			public const int RequestCard_content = 2130903112;
+			public const int place_autocomplete_progress = 2130903112;
 			
 			// aapt resource value: 0x7f030049
-			public const int Requests_content = 2130903113;
+			public const int RequestCard_content = 2130903113;
 			
 			// aapt resource value: 0x7f03004a
-			public const int select_dialog_item_material = 2130903114;
+			public const int Requests_content = 2130903114;
 			
 			// aapt resource value: 0x7f03004b
-			public const int select_dialog_multichoice_material = 2130903115;
+			public const int select_dialog_item_material = 2130903115;
 			
 			// aapt resource value: 0x7f03004c
-			public const int select_dialog_singlechoice_material = 2130903116;
+			public const int select_dialog_multichoice_material = 2130903116;
 			
 			// aapt resource value: 0x7f03004d
-			public const int support_simple_spinner_dropdown_item = 2130903117;
+			public const int select_dialog_singlechoice_material = 2130903117;
 			
 			// aapt resource value: 0x7f03004e
-			public const int toolbar = 2130903118;
+			public const int support_simple_spinner_dropdown_item = 2130903118;
+			
+			// aapt resource value: 0x7f03004f
+			public const int toolbar = 2130903119;
 			
 			static Layout()
 			{

@@ -15,7 +15,13 @@ namespace AkademAndroidMobile
     [Activity(Theme = "@style/MyCustomTheme", Label = "AkademAndroidMobile", Icon = "@drawable/icon")]
     public class LoginActivity : Activity
     {
-        Button _mButton, _ForgetPassButton;
+
+        EditText ip;
+        EditText port;
+        Button connectBtn;
+        bool isSuccessConnect = true;
+        string ipText = "";
+        string portText = "";
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -23,23 +29,75 @@ namespace AkademAndroidMobile
 
             SetContentView(Resource.Layout.Login);
 
-            _mButton = FindViewById<Button>(Resource.Id.connectBtn);
-            _mButton.Click += _mButton_Click;
+            ip = FindViewById<EditText>(Resource.Id.ip);
+            port = FindViewById<EditText>(Resource.Id.port);
+            connectBtn = FindViewById<Button>(Resource.Id.connectBtn);
+            connectBtn.Click += connectBtn_Click;
 
 
         }
 
-        private void _ForgetPassButton_Click(object sender, EventArgs e)
-        {
-            Intent intent = new Intent(this, typeof(ForgetPassActivity));
-            StartActivity(intent);
-        }
 
-        private void _mButton_Click(object sender, EventArgs e)
+        private void connectBtn_Click(object sender, EventArgs e)
         {
+            ipText = ip.Text == null ? "" : ip.Text;
+            portText = port.Text == null ? "" : port.Text;
+
+            if (!(IsConnect(ipText, portText)))
+            {
+                Toast.MakeText(this, "Соединение не установлено, попробуйте еще раз", ToastLength.Long). Show();
+
+            }
+            Toast.MakeText(this, "Соединение установлено!", ToastLength.Long).Show();
+
             Intent intent = new Intent(this, typeof(MainActivity));
             StartActivity(intent);
             OverridePendingTransition(Android.Resource.Animation.SlideOutRight, Android.Resource.Animation.SlideInLeft);
+        }
+
+        public bool IsConnect(string ip, string port)
+        {
+            #region tcp
+            //public mcOMRON.OmronPLC plc;
+            //this.plc = new mcOMRON.OmronPLC(mcOMRON.TransportType.Tcp);     
+            #endregion
+
+            bool IsOK = false;
+            //if (ip == "" || port == "") return IsOK;
+
+            #region tcp
+            //try
+            //{
+            //    mcomron.tcpfinscommand tcpcommand = ((mcomron.tcpfinscommand)plc.finscommand);
+            //    tcpcommand.settcpparams(ipaddress.parse(ip), convert.toint32(port));
+
+            //    if (!plc.connect())
+            //    {
+            //        throw new exception(plc.lasterror);
+            //    }
+            //}
+            //catch (exception ex)
+            //{
+            //    return isok;
+            //}
+
+            //try
+            //{
+            //    if (!plc.finsconnectiondataread(0))
+            //    {
+            //        throw new exception(plc.lasterror);
+            //    }
+
+            //}
+            //catch (exception ex)
+            //{
+            //    return isok;
+            //}
+            //IsOK = true;
+
+            //return IsOK;
+            #endregion
+            return true;
         }
     }
 }
