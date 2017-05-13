@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     style="@style/edittext_prompttext"
-                    android:text="Логин" />
+                    android:text="IP" />
             </FrameLayout>
             <FrameLayout
                 android:layout_marginBottom="15dp"
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content">
                 <EditText
                     style="@style/edittext"
-                    android:id="@+id/email"
+                    android:id="@+id/ip"
                     android:singleLine="true"
                     android:gravity="center" />
             </FrameLayout>
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     style="@style/edittext_prompttext"
-                    android:text="Пароль" />
+                    android:text="PORT" />
             </FrameLayout>
             <FrameLayout
                 android:layout_marginBottom="30dp"
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content">
                 <EditText
                     style="@style/edittext"
-                    android:id="@+id/password"
+                    android:id="@+id/port"
                     android:inputType="textPassword"
                     android:singleLine="true" />
             </FrameLayout>
@@ -66,29 +66,11 @@
                 <Button
                     style="@style/yellow_button"
                     android:textColor="#fff"
-                    android:text="Вход"
+                    android:text="Соединить"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/signInBtn" />
+                    android:id="@+id/connectBtn" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-    <FrameLayout
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_width="fill_parent"
-        android:layout_gravity="bottom"
-        android:layout_height="wrap_content">
-        <Button
-            android:textSize="14sp"
-            android:textAllCaps="false"
-            android:stateListAnimator="@null"
-            android:layout_gravity="center"
-            android:text="@string/forgot_password"
-            android:background="@android:color/transparent"
-            style="@style/reestablish_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/reestablishPassBtn" />
-    </FrameLayout>
 </FrameLayout>

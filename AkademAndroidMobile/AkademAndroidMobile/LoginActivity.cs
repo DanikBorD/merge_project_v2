@@ -23,11 +23,9 @@ namespace AkademAndroidMobile
 
             SetContentView(Resource.Layout.Login);
 
-            _mButton = FindViewById<Button>(Resource.Id.signInBtn);
+            _mButton = FindViewById<Button>(Resource.Id.connectBtn);
             _mButton.Click += _mButton_Click;
 
-            _ForgetPassButton = FindViewById<Button>(Resource.Id.reestablishPassBtn);
-            _ForgetPassButton.Click += _ForgetPassButton_Click;
 
         }
 
