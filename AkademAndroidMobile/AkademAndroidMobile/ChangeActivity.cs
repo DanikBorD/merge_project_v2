@@ -19,7 +19,7 @@ namespace AkademAndroidMobile
         {
             base.OnCreate(savedInstanceState);
 
-           
+            SetContentView(Resource.Layout.MainDisplay);
         }
     }
 }
