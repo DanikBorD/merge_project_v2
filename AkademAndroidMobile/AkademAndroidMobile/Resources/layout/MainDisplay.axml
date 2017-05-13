@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/edittext_prompttext"
+                android:text="Текущая температура"
+                android:textSize="20.0dp"
+                android:layout_marginTop="30.0dp"
+                android:layout_marginBottom="22.0dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout1">
+            <TextView
+                style="@style/edittext_prompttext"
+                android:id="@+id/CurrentTempTextView"
+                android:singleLine="true"
+                android:text="5 C"
+                android:gravity="center"
+                android:textSize="30.0dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/edittext_prompttext"
+                android:text="PORT" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/port"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </FrameLayout>
+        <Button
+            style="@style/yellow_button"
+            android:textColor="#fff"
+            android:text="Соединить"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/connectBtn" />
+    </LinearLayout>
+</LinearLayout>

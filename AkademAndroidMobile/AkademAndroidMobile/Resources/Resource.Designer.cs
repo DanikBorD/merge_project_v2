@@ -2861,8 +2861,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0083
 			public const int Contacts_content = 2131361923;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int CurrenttempTextView = 2131361969;
+			// aapt resource value: 0x7f0a00b2
+			public const int CurrentTempTextView = 2131361970;
 			
 			// aapt resource value: 0x7f0a008e
 			public const int InputDate = 2131361934;
@@ -3119,8 +3119,8 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0049
 			public const int @fixed = 2131361865;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int frameLayout1 = 2131361970;
+			// aapt resource value: 0x7f0a00b1
+			public const int frameLayout1 = 2131361969;
 			
 			// aapt resource value: 0x7f0a004d
 			public const int geocode = 2131361869;
