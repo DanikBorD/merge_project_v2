@@ -33,31 +33,39 @@
                 android:singleLine="true"
                 android:text="5 C"
                 android:gravity="center"
-                android:textSize="30.0dp" />
+                android:textSize="35.0dp" />
         </FrameLayout>
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40.0dp"
+            android:layout_marginBottom="22.0dp">
             <TextView
                 style="@style/edittext_prompttext"
-                android:text="PORT" />
+                android:text="Соответствие установленной норме"
+                android:textSize="20.0dp" />
         </FrameLayout>
         <FrameLayout
             android:layout_marginBottom="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <EditText
-                style="@style/edittext"
-                android:id="@+id/port"
-                android:inputType="textPassword"
-                android:singleLine="true" />
+            <TextView
+                style="@style/edittext_prompttext"
+                android:id="@+id/CurrentStatusTextView"
+                android:singleLine="true"
+                android:text="ОК"
+                android:gravity="center"
+                android:textSize="35.0dp" />
         </FrameLayout>
         <Button
             style="@style/yellow_button"
             android:textColor="#fff"
-            android:text="Соединить"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/connectBtn" />
+            android:text="Управлять температурой"
+            android:layout_width="330.0dp"
+            android:layout_height="95.5dp"
+            android:id="@+id/connectBtn"
+            android:layout_marginTop="40.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </LinearLayout>
