@@ -17,19 +17,19 @@ namespace AkademAndroidMobile
     [Activity(Theme = "@style/MyCustomTheme", Label = "AkademAndroidMobile", Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
-        private DrawerLayout _mDrawerLayout;
+        //private DrawerLayout _mDrawerLayout;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            SetContentView (Resource.Layout.Main);
+            SetContentView (Resource.Layout.MainDisplay);
 
 
 
-            SupportActionBar ab = SupportActionBar;
-            ab.Title = "Заявки";
-            ab.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
-            ab.SetDisplayHomeAsUpEnabled(true);
+            //SupportActionBar ab = SupportActionBar;
+            //ab.Title = "Заявки";
+            //ab.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
+            //ab.SetDisplayHomeAsUpEnabled(true);
 
             ////Выпадающее меню слева
             //_mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
@@ -64,42 +64,42 @@ namespace AkademAndroidMobile
         //}
 
         //Навигация по клику
-        private void SetUpDrawerContent(NavigationView mLeftDrawer)
-        {
-            mLeftDrawer.NavigationItemSelected += (object sender, NavigationView.NavigationItemSelectedEventArgs e) =>
-            {
-                #region Переход на другую активити.
+        //private void SetUpDrawerContent(NavigationView mLeftDrawer)
+        //{
+        //    mLeftDrawer.NavigationItemSelected += (object sender, NavigationView.NavigationItemSelectedEventArgs e) =>
+        //    {
+        //        #region Переход на другую активити.
 
-                var menuItem = e.MenuItem;
-                //menuItem.SetChecked(true);
+        //        var menuItem = e.MenuItem;
+        //        //menuItem.SetChecked(true);
 
-                Intent intent = new Intent();
+        //        Intent intent = new Intent();
 
-                switch (menuItem.ItemId)
-                {
-                    case Resource.Id.nav_create_req:
-                        intent = new Intent(this, typeof(CreationActivity));
-                        StartActivity(intent);
-                        Finish();
-                        break;
+        //        switch (menuItem.ItemId)
+        //        {
+        //            case Resource.Id.nav_create_req:
+        //                intent = new Intent(this, typeof(CreationActivity));
+        //                StartActivity(intent);
+        //                Finish();
+        //                break;
 
-                    case Resource.Id.nav_contacts:
-                        intent = new Intent(this, typeof(ContactsActivity));
-                        StartActivity(intent);
-                        Finish();
-                        break;
+        //            case Resource.Id.nav_contacts:
+        //                intent = new Intent(this, typeof(ContactsActivity));
+        //                StartActivity(intent);
+        //                Finish();
+        //                break;
 
-                    case Resource.Id.nav_exit:
-                        intent = new Intent(this, typeof(LoginActivity));
-                        StartActivity(intent);
-                        Finish();
-                        break;
-                }
+        //            case Resource.Id.nav_exit:
+        //                intent = new Intent(this, typeof(LoginActivity));
+        //                StartActivity(intent);
+        //                Finish();
+        //                break;
+        //        }
 
-                #endregion
-                _mDrawerLayout.CloseDrawers();
-            };
-        }
+        //        #endregion
+        //        _mDrawerLayout.CloseDrawers();
+        //    };
+        //}
 
         ////Создание меню в тулбаре
         //public override bool OnCreateOptionsMenu(IMenu menu)
