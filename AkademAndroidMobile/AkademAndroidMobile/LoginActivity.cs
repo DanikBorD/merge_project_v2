@@ -63,7 +63,12 @@ namespace AkademAndroidMobile
             #endregion
 
             bool IsOK = false;
-            //if (ip == "" || port == "") return IsOK;
+            //if (ip == "" || port == "") 
+			{
+				Toast.MakeText(this, "Соединение не установлено, попробуйте еще раз", ToastLength.Long).Show();
+				return IsOK;
+			}
+
 
             #region tcp
             //try
