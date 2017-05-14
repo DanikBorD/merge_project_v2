@@ -17,6 +17,7 @@ namespace scada_dispetcher_station
     {
         //Connect cnn;
         public int NumberOfFlap;
+		public float Angle;
         public UInt16 writeOpenFlap = Convert.ToUInt16(1);
         public UInt16 writeCloseFlap = Convert.ToUInt16(2);
         public UInt16 readFlap;
@@ -24,11 +25,11 @@ namespace scada_dispetcher_station
 
         public Flap(int numberOfFlap)
         {
-           // this.cnn = cnn;
+            //this.cnn = cnn;
             this.NumberOfFlap = numberOfFlap;
         }
 
-        public async Task<bool> WriteOpen()
+		public async Task<bool> WriteOpen(float angle)
         {
             //bool result = false;
             //UInt16 dm_position = 5;
@@ -38,10 +39,10 @@ namespace scada_dispetcher_station
             //    writeOpenFlap = Convert.ToUInt16(4);
             //}
 
-
+			
             //try
             //{
-            //    result = cnn.plc.WriteCIO(Convert.ToUInt16(dm_position), writeOpenFlap);
+            //    result = cnn.plc.WriteCIO(Convert.ToUInt16(dm_position), writeOpenFlap, angle);
             //    if (!result)
             //    {
             //        throw new Exception(cnn.plc.LastError);
@@ -49,7 +50,7 @@ namespace scada_dispetcher_station
             //}
             //catch (Exception ex)
             //{
-            //    //MessageBox.Show("WriteDM() error: " + ex.Message);            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            //    //MessageBox.Show("WriteDM() error: " + ex.Message);            
             //}
 
             //result = true;
@@ -58,7 +59,7 @@ namespace scada_dispetcher_station
             return true;
         }
 
-        public async Task<bool> WriteClose()
+        public async Task<bool> WriteClose(float angle)
         {
             //bool result = false;
             //UInt16 dm_position = 5;

@@ -15,7 +15,7 @@ namespace scada_dispetcher_station
 {
     class Termometr
     {
-        Connect cnn;
+        //Connect cnn;
         public int NumberOfTemometer;
         public int temperature;
         public int normalTemperature;
@@ -25,7 +25,7 @@ namespace scada_dispetcher_station
 
         public Termometr(int numberOfTermometer)
         {
-            this.cnn = cnn;
+            //this.cnn = cnn;
             this.NumberOfTemometer = numberOfTermometer;
         }
 

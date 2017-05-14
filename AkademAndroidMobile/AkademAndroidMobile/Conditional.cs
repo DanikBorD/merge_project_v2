@@ -17,13 +17,13 @@ namespace scada_dispetcher_station
     {
         //ToggleButton btn = FindViewById<ToggleButton>(Resource.Layout.ConditionalToggleButton);
         //TextView txtView = FindViewById<TextView>(Resource.Layout.ConditionalTemperatureTextView);
-        Connect cnn;
+        //Connect cnn;
         public UInt16 readConditional;
         public UInt16 statusConditional;
 
         public Conditional()
         {
-            this.cnn = cnn;
+            //this.cnn = cnn;
         }
 
         public async Task<bool> TurnOnOff(UInt16 onoff)
