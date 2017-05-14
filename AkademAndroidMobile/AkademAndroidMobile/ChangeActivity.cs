@@ -48,7 +48,23 @@ namespace AkademAndroidMobile
             RoomTempUp.Click += RoomTempUp_Click;
             RoomTempDown.Click += RoomTempDown_Click;
 
+            ConditionalTempUp.Click += ConditionalTempUp_Click;
+            ConditionalTempDown.Click += ConditionalTempDown_Click;
+
+            HeaterTempUp.Click += HeaterTempUp_Click;
+            HeaterTempDown.Click += HeaterTempDown_Click;
+
+            Accept.Click += Accept_Click;
         }
+
+
+        private void Accept_Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
+            OverridePendingTransition(Android.Resource.Animation.SlideOutRight, Android.Resource.Animation.SlideInLeft);
+        }
+
 
         private void RoomTempDown_Click(object sender, EventArgs e)
         {
@@ -60,6 +76,32 @@ namespace AkademAndroidMobile
         {
             int val = Convert.ToUInt16(RoomTemp.Text) + 1;
             RoomTemp.Text = val.ToString();
+        }
+
+
+        private void ConditionalTempDown_Click(object sender, EventArgs e)
+        {
+            int val = Convert.ToUInt16(ConditionalTemp.Text) - 1;
+            ConditionalTemp.Text = val.ToString();
+        }
+
+        private void ConditionalTempUp_Click(object sender, EventArgs e)
+        {
+            int val = Convert.ToUInt16(ConditionalTemp.Text) + 1;
+            ConditionalTemp.Text = val.ToString();
+        }
+
+
+        private void HeaterTempDown_Click(object sender, EventArgs e)
+        {
+            int val = Convert.ToUInt16(ConditionalTemp.Text) - 1;
+            ConditionalTemp.Text = val.ToString();
+        }
+
+        private void HeaterTempUp_Click(object sender, EventArgs e)
+        {
+            int val = Convert.ToUInt16(ConditionalTemp.Text) + 1;
+            ConditionalTemp.Text = val.ToString();
         }
     }
 }
