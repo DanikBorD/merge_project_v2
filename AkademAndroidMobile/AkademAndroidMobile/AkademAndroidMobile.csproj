@@ -153,12 +153,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeActivity.cs" />
+    <Compile Include="Conditional.cs" />
     <Compile Include="ContactsActivity.cs" />
     <Compile Include="CreationActivity.cs" />
     <Compile Include="FilterActivity.cs" />
+    <Compile Include="Flap.cs" />
     <Compile Include="ForgetPassActivity.cs" />
+    <Compile Include="Heater.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Manager.cs" />
     <Compile Include="MapActivity.cs" />
     <Compile Include="RequestCardActivity.cs" />
     <Compile Include="Resources\fragments\DatePickerFragment.cs" />
@@ -166,6 +170,7 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashScreen.cs" />
+    <Compile Include="Termometr.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
