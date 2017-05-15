@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace AkademAndroidMobile
 {
-    [Activity(Theme = "@style/MyCustomTheme", Label = "AkademAndroidMobile", Icon = "@drawable/icon")]
+    [Activity(Theme = "@style/MyCustomTheme", MainLauncher = true, Label = "AkademAndroidMobile", Icon = "@drawable/icon")]
     public class LoginActivity : Activity
     {
 
