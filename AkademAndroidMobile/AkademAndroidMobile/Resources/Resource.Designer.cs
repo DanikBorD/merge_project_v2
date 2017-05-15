@@ -2891,11 +2891,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0097
 			public const int DownHeaterTemperatureButton = 2131361943;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int DownRoomTemperatureButton = 2131361930;
-			
 			// aapt resource value: 0x7f0a0086
-			public const int DownRoomTemperatureDiffButton = 2131361926;
+			public const int DownRoomTemperatureButton = 2131361926;
+			
+			// aapt resource value: 0x7f0a008a
+			public const int DownRoomTemperatureDiffButton = 2131361930;
 			
 			// aapt resource value: 0x7f0a0095
 			public const int HeaterTemperatureTextView = 2131361941;
@@ -2936,11 +2936,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a00be
 			public const int OrderNumberLayout = 2131361982;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int RoomTemperatureDiffTextView = 2131361924;
-			
 			// aapt resource value: 0x7f0a0088
-			public const int RoomTemperatureTextView = 2131361928;
+			public const int RoomTemperatureDiffTextView = 2131361928;
+			
+			// aapt resource value: 0x7f0a0084
+			public const int RoomTemperatureTextView = 2131361924;
 			
 			// aapt resource value: 0x7f0a0090
 			public const int UpConditionalTemperatureButton = 2131361936;
@@ -2948,11 +2948,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a0096
 			public const int UpHeaterTemperatureButton = 2131361942;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int UpRoomTemperatureButton = 2131361929;
-			
 			// aapt resource value: 0x7f0a0085
-			public const int UpRoomTemperatureDiffButton = 2131361925;
+			public const int UpRoomTemperatureButton = 2131361925;
+			
+			// aapt resource value: 0x7f0a0089
+			public const int UpRoomTemperatureDiffButton = 2131361929;
 			
 			// aapt resource value: 0x7f0a00d1
 			public const int action0 = 2131362001;
@@ -3410,11 +3410,11 @@ namespace AkademAndroidMobile
 			// aapt resource value: 0x7f0a00d8
 			public const int right_side = 2131362008;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int roomDiffLine = 2131361922;
-			
 			// aapt resource value: 0x7f0a0087
-			public const int roomLine = 2131361927;
+			public const int roomDiffLine = 2131361927;
+			
+			// aapt resource value: 0x7f0a0082
+			public const int roomLine = 2131361922;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int satellite = 2131361810;
