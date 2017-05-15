@@ -31,6 +31,7 @@ namespace AkademAndroidMobile
 
         public async Task<UInt16> ReadDM()
         {
+            #region plc
             //UInt16 dm_position;
 
             //if (NumberOfTemometer == 1)
@@ -70,6 +71,7 @@ namespace AkademAndroidMobile
             //}
 
             //return tmpFromPLC;
+#endregion
             return 1;
         }
     }

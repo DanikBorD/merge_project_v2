@@ -31,6 +31,7 @@ namespace AkademAndroidMobile
 
 		public async Task<bool> WriteOpen(float angle)
         {
+            #region plc
             //bool result = false;
             //UInt16 dm_position = 5;
 
@@ -39,7 +40,7 @@ namespace AkademAndroidMobile
             //    writeOpenFlap = Convert.ToUInt16(4);
             //}
 
-			
+
             //try
             //{
             //    result = cnn.plc.WriteCIO(Convert.ToUInt16(dm_position), writeOpenFlap, angle);
@@ -55,12 +56,13 @@ namespace AkademAndroidMobile
 
             //result = true;
             //return result;
-
+#endregion
             return true;
         }
 
         public async Task<bool> WriteClose(float angle)
         {
+            #region plc
             //bool result = false;
             //UInt16 dm_position = 5;
             //if (NumberOfFlap == 2)
@@ -83,12 +85,13 @@ namespace AkademAndroidMobile
 
             //result = true;
             //return result;
-
+#endregion
             return true;
         }
 
         public async Task<UInt16> ReadDM()
         {
+            #region plc
             //UInt16 result = 0;
             //UInt16 dm_position = 100;
 
@@ -132,7 +135,7 @@ namespace AkademAndroidMobile
             //}
 
             //return result;
-
+#endregion
             return 1;
         }
     }
