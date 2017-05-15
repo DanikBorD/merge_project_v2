@@ -17,10 +17,15 @@ namespace AkademAndroidMobile
     [Activity(Label = "ChangeActivity1")]
     public class ChangeActivity : Activity
     {
+        int MaxDiff;
+
         CheckBox IsAuto;
+        TextView RoomTempDiff;
         TextView RoomTemp;
         TextView ConditionalTemp;
         TextView HeaterTemp;
+        ImageButton RoomTempDiffUp;
+        ImageButton RoomTempDiffDown;
         ImageButton RoomTempUp;
         ImageButton RoomTempDown;
         ImageButton ConditionalTempUp;
@@ -47,9 +52,12 @@ namespace AkademAndroidMobile
             SetContentView(Resource.Layout.ChangeTemp);
 
             IsAuto = FindViewById<CheckBox>(Resource.Id.IsAutomaticCheckBox);
+            RoomTempDiff = FindViewById<TextView>(Resource.Id.RoomTemperatureDiffTextView);
             RoomTemp = FindViewById<TextView>(Resource.Id.RoomTemperatureTextView);
             ConditionalTemp = FindViewById<TextView>(Resource.Id.ConditionalTemperatureTextView);
             HeaterTemp = FindViewById<TextView>(Resource.Id.HeaterTemperatureTextView);
+            RoomTempDiffUp = FindViewById<ImageButton>(Resource.Id.UpRoomTemperatureDiffButton);
+            RoomTempDiffDown = FindViewById<ImageButton>(Resource.Id.DownRoomTemperatureDiffButton);
             RoomTempUp = FindViewById<ImageButton>(Resource.Id.UpRoomTemperatureButton);
             RoomTempDown = FindViewById<ImageButton>(Resource.Id.DownRoomTemperatureButton);
             ConditionalTempUp = FindViewById<ImageButton>(Resource.Id.UpConditionalTemperatureButton);
@@ -65,8 +73,10 @@ namespace AkademAndroidMobile
             condToggleBtn = FindViewById<ToggleButton>(Resource.Id.ConditionalToggleButton);
             heatToggleBtn = FindViewById<ToggleButton>(Resource.Id.HeaterToggleButton);
 
+            MaxDiff = Convert.ToUInt16(RoomTempDiff.Text);
             bool IsAutoCheck = IsAutoReadDM();
             int roomTemp = RoomTempReadDM();
+
 
             RoomTemp.Text = roomTemp.ToString();
             ConditionalTemp.Text = cond.ReadDM().ToString();
@@ -80,6 +90,9 @@ namespace AkademAndroidMobile
             {
                 IsAuto.Checked = false;
             }
+
+            RoomTempDiffUp.Click += RoomTempDiffUp_Click;
+            RoomTempDiffDown.Click += RoomTempDiffDown_Click;
 
             RoomTempUp.Click += RoomTempUp_Click;
             RoomTempDown.Click += RoomTempDown_Click;
@@ -112,6 +125,17 @@ namespace AkademAndroidMobile
             }
         }
 
+        private void RoomTempDiffDown_Click(object sender, EventArgs e)
+        {
+            int val = Convert.ToUInt16(RoomTempDiff.Text) - 1;
+            RoomTempDiff.Text = val.ToString();
+        }
+
+        private void RoomTempDiffUp_Click(object sender, EventArgs e)
+        {
+            int val = Convert.ToUInt16(RoomTempDiff.Text) + 1;
+            RoomTempDiff.Text = val.ToString();
+        }
 
         private void IsAuto_CheckedChanged(object sender, EventArgs e)
         {
