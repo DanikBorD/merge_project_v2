@@ -11,9 +11,9 @@ using Android.Views;
 using Android.Widget;
 using System.Threading.Tasks;
 
-namespace scada_dispetcher_station
+namespace AkademAndroidMobile
 {
-    class Flap
+    public class Flap
     {
         //Connect cnn;
         public int NumberOfFlap;

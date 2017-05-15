@@ -17,9 +17,15 @@ namespace AkademAndroidMobile
     [Activity(Theme = "@style/MyCustomTheme", Label = "AkademAndroidMobile", Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
+
         TextView currentTemp;
         TextView currentStatus;
         Button changeBtn;
+
+        //public MainActivity(int temp)
+        //{
+            
+        //}
 
         private DrawerLayout _mDrawerLayout;
         protected override void OnCreate(Bundle bundle)

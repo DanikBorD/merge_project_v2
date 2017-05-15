@@ -11,9 +11,9 @@ using Android.Views;
 using Android.Widget;
 using System.Threading;
 
-namespace scada_dispetcher_station
+namespace AkademAndroidMobile
 {
-    class Manager
+    public class Manager
     {
         Termometr trmInside = new Termometr(1);
         Termometr trmTop = new Termometr(2);

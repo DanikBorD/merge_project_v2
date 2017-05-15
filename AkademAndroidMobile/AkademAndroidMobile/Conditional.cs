@@ -11,9 +11,9 @@ using Android.Views;
 using Android.Widget;
 using System.Threading.Tasks;
 
-namespace scada_dispetcher_station
+namespace AkademAndroidMobile
 {
-    class Conditional
+    public class Conditional
     {
         //ToggleButton btn = FindViewById<ToggleButton>(Resource.Layout.ConditionalToggleButton);
         //TextView txtView = FindViewById<TextView>(Resource.Layout.ConditionalTemperatureTextView);
@@ -95,7 +95,7 @@ namespace scada_dispetcher_station
 
        
 
-        public async Task<UInt16> ReadDM()
+        public int ReadDM()
         {
             #region tcp
             //UInt16 result = 0;

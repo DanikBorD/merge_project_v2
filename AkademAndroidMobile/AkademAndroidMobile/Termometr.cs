@@ -11,9 +11,9 @@ using Android.Views;
 using Android.Widget;
 using System.Threading.Tasks;
 
-namespace scada_dispetcher_station
+namespace AkademAndroidMobile
 {
-    class Termometr
+    public class Termometr
     {
         //Connect cnn;
         public int NumberOfTemometer;

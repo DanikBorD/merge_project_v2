@@ -11,9 +11,9 @@ using Android.Views;
 using Android.Widget;
 using System.Threading.Tasks;
 
-namespace scada_dispetcher_station
+namespace AkademAndroidMobile
 {
-    class Heater
+    public class Heater
     {
         //ToggleButton btn = FindViewById<ToggleButton>(Resource.Layout.HeaterToggleButton);
         //TextView txtView = FindViewById<TextView>(Resource.Layout.HeaterTemperatureTextView);
@@ -23,7 +23,7 @@ namespace scada_dispetcher_station
 
         public Heater()
         {
-            //this.cnn = cnn;
+           // this.cnn = cnn;
         }
 
         public async Task<bool> TurnOnOff(UInt16 onoff)
@@ -94,7 +94,7 @@ namespace scada_dispetcher_station
 
 
 
-        public async Task<UInt16> ReadDM()
+        public int ReadDM()
         {
             #region tcp
             //UInt16 result = 0;
@@ -129,7 +129,7 @@ namespace scada_dispetcher_station
 #endregion
 
             //txtView.Text = "0";
-            return 1;
+            return 15;
         }
     }
 }
